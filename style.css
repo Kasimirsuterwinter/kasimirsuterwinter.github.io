@@ -1,0 +1,150 @@
+
+html {
+  background-color: #F1ECE9;
+}
+
+
+.background_img_k {
+   background: url(web_baground.png) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+
+
+
+.cover-statement-home {
+    font-size: 6.5vw;
+    color: white;
+}
+
+.body-statement-home {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2vw;
+  color: white;
+}
+
+.footer-text-home {
+  font-size: 20px;
+  color: grey;
+}
+
+p {
+    font-size: 24px;
+}
+
+.flexbox {
+  display: flex;
+
+}
+
+nav {
+  float: right;
+}
+
+li {
+  padding-top: 30px;
+  margin-righ: 1vw;
+  margin-left: 1vw;
+  color: #F1ECE9 ;
+  display: inline-block;
+}
+
+.logo {
+  width: 50px;
+  margin-bottom: 20px; }
+
+
+
+
+@supports ((display: -ms-grid) or (display: grid)) {
+  li {
+    width: auto;
+    margin: 0; }
+  @media (min-width: 60px) {
+    /* autoprefixer: off */
+    main {
+      /* autoprefixer: off */
+      display: grid;
+      height: 100%;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: auto auto auto auto;
+      grid-gap: 1vw;
+      padding: 15px;
+
+    }
+
+
+.logo {
+  grid-row: 1 / 2;
+
+}
+.logo img {
+width: 16vw;
+}
+
+header {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  position: fixed;
+  top: 23px;
+  height: 70px;
+}
+.front-cover {
+  grid-row: 2 / 3;
+  grid-column: 1 / 8;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 7vw;
+  height: 100vh;
+}
+.content-half {
+  grid-row: 3 / 4;
+  grid-column: 2 / 6;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.body-content {
+  padding-top: 30px;
+}
+
+footer {
+  grid-row: 4 / 5;
+  grid-column: 1 / -1;
+  height: 200px;
+}
+
+header {
+    display: flex;
+}
+
+cover-content {
+  align-content: flex-end;
+}
+
+a.active {
+  color: #F46032
+}
+
+/*
+.menu {
+  grid-area: m;
+  background-color: blue;
+}
+.front-cover {
+  grid-area: h;
+  background-color: red;
+}
+
+.content-half {
+  grid-area: c;
+  background-color: purple;
+}
+.footer {
+  grid-area: f;
+  background-color: yellow;
+}

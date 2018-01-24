@@ -1,0 +1,14 @@
+<img class="logo" src="K-Logo-Solid-white.png" alt="">
+<nav class="menu">
+  <ul>
+    <li class="{% if page.overview %}current{% endif %}">
+      <a href="/">Home</a>
+    </li>
+    <li class="{% if page.url contains '/docs/' %}current{% endif %}">
+      <a href="/work.html/">Work</a>
+    </li>
+    <li class="{% if page.author %}current{% endif %}">
+      <a href="/blog.html/">Blog</a>
+    </li>
+  </ul>
+</nav>

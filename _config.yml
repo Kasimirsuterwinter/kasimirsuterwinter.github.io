@@ -1,0 +1,13 @@
+---
+title: Kasimir Suter Winter
+email: kasimirsw@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  My personal piece of the web. Come join my explorations into design, architecture, coding and life.
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  work:
+    title: Work
+    output: true

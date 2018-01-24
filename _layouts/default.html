@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html {% if page.background %} class="background_img_k" {% endif %}>
+ <head>
+   {% include head.html %}
+ </head>
+  <body>
+    <main>
+      <header>
+        {% include header.html %}
+      </header>
+         {{ content }}
+       <footer>
+         {% include footer.html %}
+       </footer>
+     </main>
+  </body>
+</html>
