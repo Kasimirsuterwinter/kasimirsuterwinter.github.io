@@ -1,5 +1,9 @@
-
-
 <div class="menu">
-  {% include test-menu.html %}
+
+  {% if page.menu_style == "light" %}
+    {% include light-menu.html %}
+  {% else %}
+    {% include dark-menu.html %}
+  {% endif %}
+
 </div>
