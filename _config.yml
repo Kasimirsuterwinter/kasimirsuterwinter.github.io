@@ -11,3 +11,8 @@ collections:
   work:
     title: Work
     output: true
+
+plugins:
+  - jekyll-seo-tag
+  - jemoji
+  - jekyll-feed
