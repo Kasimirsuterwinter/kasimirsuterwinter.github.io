@@ -4,7 +4,24 @@ layout: default
 navigation_weight: 3
 ---
 
-
-<h2> Ramblings </h2>
-
-<p> This is the home of ideas and questions by Kasimir. </p>
+<div class="grid-area">
+  <div class="blog-grid">
+    <div class="blog-layout">
+      <ul>
+        {% for post in site.posts %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a>
+            {{ post.excerpt }}
+          </li>
+        {% endfor %}
+      </ul>
+      {% for category in site.categories %}
+        <h3> {{ category[0] }} </h3>
+        <ul>
+          {% for post in category[1] %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+  </div>
+</div>
