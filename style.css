@@ -129,7 +129,7 @@ li {
   display: flex;
   align-items: flex-end;
   padding-left: 7vw;
-  height: 90vh;
+  height: 80vh;
 }
 .content-half {
   grid-row: 3 / 4;
@@ -176,9 +176,10 @@ a.active {
 /* layout for work page */
 
 .work-grid {
-  /* autoprefixer: off */
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(10, 10vw);
+  grid-template-rows: auto auto auto;
   grid-gap: 1vw;
 }
+
+/* when adding work put this value back: grid-template-rows: repeat(10, 10vw); */
