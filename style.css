@@ -26,13 +26,13 @@ html {
 }
 
 .cover-statement-home {
-  font-family: Old Headline;
+  font-family: "Old Headline";
   font-size: 6.5vw;
   color: white;
 }
 
 .body-statement-home {
-  font-family: Code Mono;
+  font-family: "Code Mono";
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 2vw;
@@ -40,30 +40,30 @@ html {
 }
 
 .footer-text-home {
-  font-family: Code Mono;
+  font-family: "Code Mono";
   font-size: 20px;
   color: grey;
 }
 
 h1 {
-  font-family: Code Mono;
+  font-family: "Code Mono";
   text-decoration: none;
   font-size: 3rem;
 }
 
 h2 {
-  font-family: Code Mono;
+  font-family: "Code Mono";
   font-size: 2rem;
 }
 
 h3 {
-  font-family: Code Mono;
+  font-family: "Code Mono";
   font-size: 1.5rem;
 }
 
 
 p {
-  font-family: Code Mono;
+  font-family: "Code Mono";
   font-size: 21px;
 }
 
@@ -81,7 +81,7 @@ p {
 
 
 .menu-light {
-  font-family: Code Mono;
+  font-family: "Code Mono";
   color: #F1ECE9;
   font-size: 16px;
   padding-left: 1vw;
@@ -89,7 +89,7 @@ p {
 }
 
 .menu-dark {
-  font-family: Code Mono;
+  font-family: "Code Mono";
   color: black;
   font-size: 16px;
   padding-left: 1vw;
