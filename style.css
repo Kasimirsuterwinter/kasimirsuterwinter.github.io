@@ -16,13 +16,13 @@ html {
 
 
 @font-face {
-    font-family: Code Mono;
-    src: url(/fonts/codemono-regular.woff);
+    font-family: "Code Mono";
+    src: url(/assets/fonts/codemono-regular.woff);
 }
 
 @font-face {
-    font-family: Old Headline;
-    src: url(/fonts/oldheadline-bold.ttf);
+    font-family: "Old Headline";
+    src: url(/assets/fonts/oldheadline-bold.ttf);
 }
 
 .cover-statement-home {
