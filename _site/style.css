@@ -20,6 +20,7 @@ html {
   src: url('/assets/fonts/CodeMono-Regular.eot?#iefix') format('embedded-opentype'),  url('/assets/fonts/CodeMono-Regular.woff') format('woff'), url('/assets/fonts/CodeMono-Regular.ttf')  format('truetype'), url('/assets/fonts/CodeMono-Regular.svg#CodeMono-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
+  text-decoration: none;
 }
 
 
@@ -28,6 +29,7 @@ html {
   src: url('/assets/fonts/OldHeadline-Bold.eot?#iefix') format('embedded-opentype'),  url('/assets/fonts/OldHeadline-Bold.woff') format('woff'), url('/assets/fonts/OldHeadline-Bold.ttf')  format('truetype'), url('/assets/fonts/OldHeadline-Bold.svg#OldHeadline-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
+  text-decoration: none;
 }
 
 
@@ -56,16 +58,20 @@ h1 {
   text-decoration: none;
   font-size: 3.5rem;
   color: black;
+  text-decoration: none;
+
 }
 
 h2 {
   font-family: "CodeMono-Regular";
   font-size: 2rem;
+  text-decoration: none;
 }
 
 h3 {
   font-family: "CodeMono-Regular";
   font-size: 1.5rem;
+  text-decoration: none;
 }
 
 
@@ -73,6 +79,7 @@ p {
   font-family: "CodeMono-Regular";
   font-size: 18px;
   line-height: 1.5;
+  text-decoration: none;
 }
 
 .flexbox {
@@ -94,14 +101,20 @@ p {
   font-size: 16px;
   padding-left: 1vw;
   padding-right: 1vw;
-}
+  text-decoration: none;
 
+}
+a:hover {
+  /*  color: #F46032; */
+  color: #D5AB8F;
+}
 .menu-dark {
   font-family: "CodeMono-Regular";
   color: black;
   font-size: 16px;
   padding-left: 1vw;
   padding-right: 1vw;
+  text-decoration: none;
 }
 
 
