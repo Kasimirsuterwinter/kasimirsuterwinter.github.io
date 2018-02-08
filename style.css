@@ -16,55 +16,62 @@ html {
 
 
 @font-face {
-    font-family: "Code Mono";
-    src: url(/assets/fonts/codemono-regular.woff);
+  font-family: 'CodeMono-Regular';
+  src: url('/assets/fonts/CodeMono-Regular.eot?#iefix') format('embedded-opentype'),  url('/assets/fonts/CodeMono-Regular.woff') format('woff'), url('/assets/fonts/CodeMono-Regular.ttf')  format('truetype'), url('/assets/fonts/CodeMono-Regular.svg#CodeMono-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
 
 @font-face {
-    font-family: "Old Headline";
-    src: url(/assets/fonts/oldheadline-bold.ttf);
+  font-family: 'OldHeadline-Bold';
+  src: url('/assets/fonts/OldHeadline-Bold.eot?#iefix') format('embedded-opentype'),  url('/assets/fonts/OldHeadline-Bold.woff') format('woff'), url('/assets/fonts/OldHeadline-Bold.ttf')  format('truetype'), url('/assets/fonts/OldHeadline-Bold.svg#OldHeadline-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
+
 .cover-statement-home {
-  font-family: "Old Headline";
+  font-family: "OldHeadline-Bold";
   font-size: 6.5vw;
-  color: white;
+  color: #F1ECE9;
 }
 
 .body-statement-home {
-  font-family: "Code Mono";
+  font-family: "CodeMono-Regular";
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 2vw;
-  color: white;
+  font-size: 1.5vw;
+  color: #F1ECE9;
 }
 
 .footer-text-home {
-  font-family: "Code Mono";
+  font-family: "CodeMono-Regular";
   font-size: 20px;
   color: grey;
 }
 
 h1 {
-  font-family: "Code Mono";
+  font-family: "CodeMono-Regular";
   text-decoration: none;
   font-size: 3rem;
 }
 
 h2 {
-  font-family: "Code Mono";
+  font-family: "CodeMono-Regular";
   font-size: 2rem;
 }
 
 h3 {
-  font-family: "Code Mono";
+  font-family: "CodeMono-Regular";
   font-size: 1.5rem;
 }
 
 
 p {
-  font-family: "Code Mono";
-  font-size: 21px;
+  font-family: "CodeMono-Regular";
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .flexbox {
@@ -81,7 +88,7 @@ p {
 
 
 .menu-light {
-  font-family: "Code Mono";
+  font-family: "CodeMono-Regular";
   color: #F1ECE9;
   font-size: 16px;
   padding-left: 1vw;
@@ -89,7 +96,7 @@ p {
 }
 
 .menu-dark {
-  font-family: "Code Mono";
+  font-family: "CodeMono-Regular";
   color: black;
   font-size: 16px;
   padding-left: 1vw;
