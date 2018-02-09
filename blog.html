@@ -11,7 +11,7 @@ navigation_weight: 3
       <ul>
         {% for post in site.posts %}
           <li class="posts-list">
-            <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+            <a href="{{ post.url }}"><h1 class="post-title-offset" >{{ post.title }}</h1></a>
               <p> {{ post.date | date: '%B %d %Y' }}</p>
               {{ post.excerpt }}
           </li>
