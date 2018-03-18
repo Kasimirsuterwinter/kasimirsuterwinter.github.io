@@ -13,6 +13,6 @@ collections:
     output: true
 
 plugins:
-  - jekyll-seo-tag
-  - jemoji
-  - jekyll-feed
+- jekyll-seo-tag
+- jemoji
+- jekyll-feed

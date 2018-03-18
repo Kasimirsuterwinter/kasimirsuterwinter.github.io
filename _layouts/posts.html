@@ -3,9 +3,15 @@ layout: default
 ---
 <div class="grid-area">
   <div class="posts-grid">
-    <div class="post-title">{{ page.title }}</div>
+    <div class="post-title">
+      <h3 class="bold"> <a href="/blog"> Blog </a> </h3>
+      <div class="offset-right">
+        <h1>{{ page.title }}</h1>
+      </div>
+    </div>
     <div class="post-content">
-      <p> {{ page.date | date: '%B %d %Y' }}</p>
+      <img src="/assets/images/{{ page.image }}">
+      <p>{{ page.date | date: '%B %d %Y' }}</p>
 
       {{ content }}
 
