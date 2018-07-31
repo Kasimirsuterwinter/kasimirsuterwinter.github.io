@@ -1,8 +1,7 @@
 ---
 layout: posts
-title: Test blog post
+title: Currencies, We have been using the tool all wrong!
 image: jekyll-featured-image.png
-excerpt_seperator: <!-- excerpt -->
 categories:
   -
 ---
