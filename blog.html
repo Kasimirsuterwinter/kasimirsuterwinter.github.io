@@ -6,20 +6,17 @@ navigation_weight: 3
 ---
 
 <div class="grid-area">
-  <div class="blog-grid">
-    <div class="blog-layout">
-      <ul>
-        {% for post in site.posts %}
-          <li class="posts-list">
-            <a href="{{ post.url }}"><h1 class="post-title-offset" >{{ post.title }}</h1></a>
-              <p> {{ post.date | date: '%B %d %Y' }}</p>
-              {{ post.excerpt }}
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+  <ul class="blog-grid">
+    <h3 class="bold"> <a href="/blog"> Blog </a> </h3>
+    {% for post in site.posts %}
+    <li class="post-list-grid">
+      <a class="post-list-title" href="{{ post.url }}"><h1 class="offset-right" >{{ post.title }}</h1></a>
+      <img class="post-list-image" src="/assets/images/{{ post.image }}">
+      <p class="post-list-date"> {{ post.date | date: '%B %d %Y' }}</p>
+    </li>
+    {% endfor %}
+  </ul>
 <!--Take this out of comment for categories to display:    {% include blog-categories.html %} -->
-  </div>
 </div>
 
 <!-- https://oak.is/thinking/ inspiration :) -->

@@ -243,20 +243,28 @@ a.active {
 }
 
 
-/* layout for blog page */
+/* layout for blog list page */
 
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 100vh auto;
-  grid-gap: 1vw;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: ;
+  margin-left: 8vw;
+  margin-right: 8vw;
 }
 
-.blog-layout {
-  grid-row: 1 / 3;
-  grid-column: 4 / 10;
+
+.post-list-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  grid-gap: 1vw;
+  margin-bottom: 150px;
 }
+
+
 
 .category-list {
   grid-row: 2 / 3;
@@ -268,13 +276,28 @@ a.active {
   padding-bottom: 100px;
 }
 
-.post-title-offset {
-  font-size: 4.1rem;
-  margin-left: -20vw;
+
+.post-list-title {
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  margin-top: 6vh;
 }
+
 ul {
   padding: 0px;
 }
+
+.post-list-image {
+    max-width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.05);
+}
+
+.post-list-date {
+  grid-column: 2 / 3;
+}
+
 
 /* layout for work page */
 
@@ -309,13 +332,16 @@ ul {
 /* when adding work put this value back: grid-template-rows: repeat(10, 10vw); */
 
 
-/* layout for posts pages */
+/* layout for blog post pages */
 
 .posts-grid {
   display: grid;
-  grid-template-columns: .1fr 1fr 3fr .1fr;
-  grid-template-rows: 70vh auto 50vh;
-  grid-gap: 5vw;
+  grid-template-columns: .001fr 1fr 3fr .001fr;
+  grid-template-rows: auto;
+  grid-gap: 0px;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  margin-top: 15px;
 }
 
 .post-title {
@@ -326,6 +352,7 @@ ul {
 .offset-right {
   position: absolute;
   width: 40vw;
+  margin-top: 50px;
 }
 
 
@@ -336,11 +363,10 @@ ul {
 
 .post-content img {
   max-width: 100%;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.05);
 }
-
 
 
 /* layout for footer */
