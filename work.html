@@ -5,22 +5,31 @@ description: Samples of my work ranging from architectural design to photography
 navigation_weight: 2
 ---
 <div class="grid-area">
-  <div class="work-grid">
+  <ul class="work-grid">
+    {% for work in site.work %}
+    <li class="{{ work.style }}" >
+      <img class="work-thumbnails" src="/assets/images/{{ work.image }}" >
+<!--      <p class="work-thumbnail-title"><a href="{{ work.url }}">{{ work.title }}</a> // {{ work.categories }}</p> -->
+    </li>
 
-    <div class="architecture-1">
+    {% endfor %}
+
+<!--
+    <div class="g" class="architecture-1">
       <h3> Architectural Design </h3>
       <p> Work comprised mostly of school projects and personal interest. </p>
     </div>
-    <div class="photography-1">
+    <div class="g" class="photography-1">
       <h3> Photography </h3>
       <p> A continuing passion which never stops inspiring me to look at the would with fresh eyes. </p>
     </div>
-    <div class="webdesign-1">
+    <div class="g" class="webdesign-1">
       <h3> Web Design </h3>
       <p> Professional and passion driven web design. </p>
     </div>
-    <div class="handmade-1">
+    <div class="g" class="handmade-1">
       <h3> Hand Made </h3>
       <p>Projects bridging my informal and formal design education. </p>
-    </div>
+    </div> -->
+
 </div>
