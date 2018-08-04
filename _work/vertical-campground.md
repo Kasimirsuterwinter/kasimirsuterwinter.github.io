@@ -4,17 +4,15 @@ title: Vertical Campground
 image: vertical-campground-featured-image.jpg
 style: vertical-campground
 categories:
-  - architecture
+  - Architecture
 ---
 
-## This is a nice title
+### Dormitories as Vertical Campgrounds
 
-And here is some body text..
+If you have ever lived in a student dormitory, you may be familiar with long corridors and shared rooms. Something else you may have noticed, is that the corridors were not only used for getting from one room to another. In todays world, we associate streets with travel, a rout to get from A to B quickly and efficiently. In actuality this is not so much the case, streets are used for much more than getting from A to B. They are ultimately the commons for social life. The space where we can meet one another equally and freely. This is the same for corridors.
 
-TIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoe TIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiessi oIjfoie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoe
+Based on this insight, I took inspiration from campgrounds, where the streets are the shared public space. Students value two types of space very highly. Private, individual space and social collective space. The other most valued spaces for students, are once which they can impact, influence and make their own.
+
+I envision a dormitory with a large open ground floor for events. Atop which stands a light well surrounded by communal living and cooking space. Off of which are private rooms looking to the street and back garden. This orientation of inner share space allows for noise and activity which does not bother neighbours, while private rooms over looking the city allow for personal reflection and rest.
+
+Ultimately, the more we find our place as individuals in an interconnected world, the greater off we will be psychologically, socially, and physically.

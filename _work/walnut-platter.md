@@ -7,14 +7,8 @@ categories:
   - Product Design
 ---
 
-## This is a nice title
+### Hand made, heart felt. 
 
-And here is some body text..
+A simple, Japanese inspired wood platter for serving food, and preparing it. The top is implanted with dishes for different foods, while the bottom is flat for cutting and preparing food on.
 
-TIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoe TIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiessi oIjfoie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoe
+The wood chose, is the dark heart wood of the Black Walnut tree. There is no additional colouring or finishing other than natural oil for longevity.

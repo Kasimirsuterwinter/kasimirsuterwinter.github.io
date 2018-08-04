@@ -4,17 +4,13 @@ title: My Space
 image: my-space-featured-image.jpg
 style: my-space
 categories:
-  - architecture
+  - Architecture
 ---
 
-## This is a nice title
+### What would your space look like?
 
-And here is some body text..
+One of my first tasks in architecture school, was to define exactly this. Given a limited area in our school, how would I design it if I had to spend one full month living there.
 
-TIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoe TIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiessi oIjfoie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoe
+I exercised many ideas of collective and individual space, of fresh open air flow and calm cozy spaces. And ultimately created what I might call a living lung.
+
+Each circular tube represents a room, storage space or foot hole. The middle is defined by semi transparent hanging garden of plants. And the surroundings walls are cubby hole of different spaces and activity zones.

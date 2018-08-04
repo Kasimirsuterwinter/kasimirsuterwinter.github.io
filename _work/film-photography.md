@@ -4,17 +4,9 @@ title: Film Photography
 image: film-photography-featured-image.png
 style: film-photography
 categories:
-  - photography
+  - Photography
 ---
 
-## This is a nice title
+### Painting with Light
 
-And here is some body text..
-
-TIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoe TIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiessi oIjfoie fosijfoeTIDO Oj fsoifj ODIjsoi d esofJoisjf eifj0sei jf oijoijf oeij
-isejfoi sJf osijefoiesjfoesi oIjfoie fosijfoe
+There is a beautiful process to working with black and white film photography, from shooting to darkroom developing and editing. It takes you on a continuous journey, exploring the outer world, and then exploring the inner world. This process is almost meditative for me, and helps me value each and every photo as a special memory or piece of art. In the digital age we inhabit, this is a valuable process for me to connect with the story telling and the slower rhythms of meanings and purpose in life.
