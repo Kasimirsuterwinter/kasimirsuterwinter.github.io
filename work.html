@@ -1,19 +1,19 @@
 ---
 layout: default
-title: Work
+title: Portfolio
 description: Samples of my work ranging from architectural design to photography.
 navigation_weight: 2
 ---
 <div class="grid-area">
-  <ul class="work-grid">
+  <div class="work-grid">
     {% for work in site.work %}
-    <li class="{{ work.style }}" >
-      <img class="work-thumbnails" src="/assets/images/{{ work.image }}" >
+    <div id="{{ work.style }}" class="{{ work.style }}" class="align-center" >
+      <a href="{{ work.url }}" ><img class="work-thumbnails" src="/assets/images/{{ work.image }}" ></a>
 <!--      <p class="work-thumbnail-title"><a href="{{ work.url }}">{{ work.title }}</a> // {{ work.categories }}</p> -->
-    </li>
+    </div>
 
     {% endfor %}
-
+  </div>
 <!--
     <div class="g" class="architecture-1">
       <h3> Architectural Design </h3>
