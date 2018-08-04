@@ -87,12 +87,10 @@ p {
 
 }
 
-.menu {
-  position: fixed;
-  top: 10px;
-  height: 70px;
-  width: 100%;
+img {
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.05);
 }
+
 
 
 
@@ -179,6 +177,13 @@ a:hover {
 
 /* layout for menu */
 
+.menu {
+  position: fixed;
+  top: 10px;
+  height: 70px;
+  width: 100%;
+}
+
 }
 .logo img {
 width: 16vw;
@@ -192,11 +197,12 @@ header {
 
 nav {
   float: right;
-  padding-right: 5vw;
+  padding-right: 7vw;
 }
 
 li.menu-list {
   display: inline-block;
+  padding-right: 1vw;
 }
 
 .logo {
@@ -302,32 +308,56 @@ ul {
 /* layout for work page */
 
 .work-grid {
+  padding: 0;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 20vh);
-  grid-gap: 1vw;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: 20vh;
+  margin-bottom: 20vh;
+  align-content: center;
+  align-items: center;
+  grid-gap: 5px;
 }
 
-.architecture-1 {
-  grid-row: 1 / 3;
-  grid-column: 2 / 6;
+.align-center {
+  align-self: center;
+  justify-self: center;
+}
+.film-photography {
+  grid-column: 2 / 4;
+  grid-row: 1 / 4;
 }
 
-.photography-1 {
-  grid-row: 3 / 4;
-  grid-column: 8/ 11;
+.loom {
+  grid-column: 5 / 10;
+  grid-row: 5 / 7;
 }
 
-.webdesign-1 {
-  grid-row: 5 / 6;
-  grid-column: 3/ 5;
+.vertical-campground {
+  grid-column: 1 / 6;
+  grid-row: 9 / 12;
 }
 
-.handmade-1 {
-  grid-row: 6 / 7;
-  grid-column: 7 / 10;
+.tension {
+  grid-column: 4 / 9;
+  grid-row: 15 / 17;
 }
 
+.my-space {
+  grid-column: 1 / 4;
+  grid-row: 19 / 22;
+}
+
+.walnut-platter {
+  grid-column: 6 / 9;
+  grid-row: 21 / 23;
+}
+
+
+img.work-thumbnails {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
 /* when adding work put this value back: grid-template-rows: repeat(10, 10vw); */
 
@@ -365,7 +395,6 @@ ul {
   max-width: 100%;
   margin-top: 80px;
   margin-bottom: 50px;
-  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.05);
 }
 
 
