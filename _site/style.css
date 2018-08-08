@@ -53,8 +53,6 @@ h1 {
   text-decoration: none;
   font-size: 3.5rem;
   color: black;
-  text-decoration: none;
-
 }
 
 h2 {
@@ -66,6 +64,7 @@ h2 {
 h3 {
   font-family: "CodeMono-Regular";
   font-size: 1.5rem;
+  color: black;
   text-decoration: none;
 }
 
@@ -101,7 +100,12 @@ img {
   padding-left: 6vw;
   text-decoration: none;
 }
-
+.menu-dark p {
+  color: black;
+}
+.menu-dark p:hover {
+  color: #D5AB8F;
+}
 
 .menu-light {
   font-family: "CodeMono-Regular";
@@ -134,7 +138,7 @@ a {
 }
 
 a:link {
-  color: inherit;
+  color: #de7129;
 }
 
 a:visited {
@@ -146,7 +150,9 @@ a:hover {
   color: #D5AB8F;
 }
 
-
+h3:hover {
+  color: #D5AB8F;
+}
 
 
   /* grid for whole website */
