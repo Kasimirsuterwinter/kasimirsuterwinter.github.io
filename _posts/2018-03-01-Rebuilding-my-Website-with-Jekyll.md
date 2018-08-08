@@ -2,18 +2,16 @@
 layout: posts
 title: Rebuilding my Website with Jekyll and CSS Grid
 image: jekyll-featured-image.png
-excerpt_seperator: <!-- excerpt -->
+excerpt_seperator: "<!-- excerpt -->"
 categories:
-  -
+- 
+
 ---
-
-
-For years I have been struggling with wordpress and it's many plugins and themes. This lead me to slowly learn more and more HTML and CSS. I never liked the idea of coding a website from scratch. But when I learned about git I had this magnificent idea about how website templates could be built in github and then hosted directly from the repository and then everyone would be able to fork and submit pull requests for any website on the internet. Well, low and behold I learned about Github Pages a few years later and my prayers were answered.
+For years I have been struggling with Wordpress and it's many plugins and themes. This lead me to slowly learn more and more HTML and CSS. I never liked the idea of coding a website from scratch, I felt it was not very efficient. When I learned about [git](https://git-scm.com/) I had this idea about how website templates could be built in [Github](github.com) and then hosted directly from a repository. Using the git workflow, everyone would be able to fork and submit pull requests for any website on the internet. Well, low and behold that literally exists! It is called [Github Pages](https://pages.github.com/) and its super cool. 
 
 ![Github Pages](/assets/images/github-pages.png?raw=true)
 
-The one piece which I had not anticipated, and which made all the difference and finally inspired me to really get my hands into the code, was Jekyll. I could hardly believe how powerful this software could be for the proliferation of experimental and new designs on the internet. With Jekyll's capacity to compile just about anything, their versatility would allow for easy forking and sharing of a wide variety of website design ideas.
-<!-- excerpt -->
+The one piece which I had not anticipated, and which made all the difference was [Jekyll](https://jekyllrb.com/). It is a static site generator which uses [Liquid](https://shopify.github.io/liquid/) as a template engine. It is also the static site generator used by [Github Pages](https://pages.github.com/). Jekyll is highly versatile, being able to compile almost any code. This means that it is useful in many different situations, and thus it has been adopted widely. <!-- excerpt -->
 
 ![Jekyll](/assets/images/jekyll.png?raw=true)
 
