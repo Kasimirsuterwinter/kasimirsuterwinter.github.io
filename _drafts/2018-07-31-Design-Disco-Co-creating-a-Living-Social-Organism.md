@@ -18,7 +18,7 @@ This is exciting and all, however what have I learned along the way?
 
 ### Start small
 
-This has been a big personal lesson. Often it is very fun to start new projects, and have new ideas. However, if you get hung up on large fantastical ideas, it becomes really overwhelming to bring it back down to earth and take real actions towards achieving all those ideas. So start small, don't overwhelm yourself. If its meant to happen, it will take off in time. The worst thing to do is squish a good idea because of inpatients, or give up right before things were about to take off. Its a bit like gardening. If you plant a seed, you won't see any activity for a few days and you might think it is dead, but then all of a sudden it will sprout and then the growth will continue exponentially until you can hardly believe you thought it was dead.
+This has been a big personal lesson. Often it is very fun to start new projects, and have new ideas. However, if you get hung up on large fantastical ideas, it becomes really overwhelming to bring it back down to earth and take real actions towards achieving all those ideas. So start small, don't overwhelm yourself. If its meant to happen, it will take off in time. The worst thing to do is squish a good idea because of inpatients, or give up right before things were about to take off. Its a bit like gardening. If you plant a seed, you won't see any activity for a few days and you might think it is dead. Then all of a sudden, it will sprout and then the growth will continue exponentially until you can hardly believe you thought it was dead.
 
 ### Dream big
 
