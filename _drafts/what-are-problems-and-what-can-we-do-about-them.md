@@ -50,4 +50,4 @@ The methodologies used to do this are called [Design Thinking](https://en.wikipe
 
 This article has been largely inspired by Russell L. Ackoff. Originally trained as an architect, and a pioneer in the field of [operations research](https://en.wikipedia.org/wiki/Operations_research "Operations research"), [systems thinking](https://en.wikipedia.org/wiki/Systems_thinking "Systems thinking") and [management science](https://en.wikipedia.org/wiki/Management_science "Management science").
 
-You can find a really [powerful presentation by him](https://www.youtube.com/watch?v=EbLh7rZ3rhU "Russel Ackoff on Youtube") on YouTube. It is a bit long, but if you found the ideas in this article interesting, I highly recommend the video, as he covers this topic and more in a very eloquent way.
+You can find a really [powerful presentation by him](https://www.youtube.com/watch?v=EbLh7rZ3rhU "Russel Ackoff on Youtube") on YouTube. It is a bit long, but if you found the ideas in this article interesting, I highly recommend the video. He covers these topics and more in very eloquent understandable ways.
