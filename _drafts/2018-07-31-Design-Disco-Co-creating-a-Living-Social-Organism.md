@@ -16,9 +16,9 @@ Fast forward to the present moment and we have come a really long way. We have t
 
 This is exciting and all, however what have I learned along the way?
 
-1. [Start Small]()
-2. [Dream big]()
-3. [Organizations/teams are alive]()
+1. [Start Small](Start small)
+2. [Dream big](Dream big)
+3. [Organizations/teams are alive](Organizations/teams are alive)
 4. [The greatest human motivations are intrinsic not extrinsic]()
 5. [For all the intrinsic motivation and nice ideas about living social organisms. We are all human.]()
 
