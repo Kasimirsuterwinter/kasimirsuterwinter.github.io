@@ -3,10 +3,9 @@ layout: posts
 title: Co-creating the Living Social Organism Design Disco
 image: design-disco-featured-image.jpg
 categories:
-  -
+- 
+
 ---
+Over the past 3 years I have been involved in the co-creation of Design Disco. No, it is not a disco club. The "Disco" stands for Discovery, although we also like to have a good time. In this post I want to try and outline some of the lessons I have learned, and a bit of where I could imagine things going. 
 
-
-![Layout Lab](/assets/images/jen-simmons-layout-lab.png)
-
-Thank you for reading, and I hope you get a chance to try out Jekyll. I also  want to through a link in [here for a great talk](https://www.youtube.com/watch?v=Qof0XB0yaDs&t=825s) by Jen Simmons about the future of design on the web.
+First off I should share a bit of what this whole disco things is about. We are a non profit organization with the mission to show people the world through the window of design. Meaning, we essentially want everyone to discover design, and how they can use design thinking in their everyday lives to "dissolve" problems they face. 
