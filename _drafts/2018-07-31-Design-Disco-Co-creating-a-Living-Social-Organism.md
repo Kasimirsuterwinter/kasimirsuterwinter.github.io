@@ -10,7 +10,7 @@ Over the past 3 years I have been involved in the co-creation of Design Disco. N
 
 First off I should share a bit of what this whole disco things is about. We are a non profit organization with the mission to show people the world through the window of design. Meaning, we essentially want everyone to discover design, and how they can use design thinking in their everyday lives to "dissolve" problems they face.
 
-Schools teach science, humanities, sports, arts, and many other disciplines of thought and activity, however design is largely left out of the curriculum. We believe this needs to change, and so just started doing it ourselves. It all began as a group of friends in college, visiting high schools and sharing about design through a presentation and an exercise. It as really small and it was just an idea that was planted like a seed.
+Schools teach science, humanities, sports, arts, and many other disciplines of thought and activity, however design is largely left out of the curriculum. We believe this needs to change, and so we just started doing it ourselves. It all began as a group of friends in college, visiting high schools and sharing about design through a presentation and an exercise. It was really small, just a fragile idea that was planted like a seed.
 
 Fast forward to the present moment and we have come a really long way. We have taught over 1,000 students with over 600 volunteer hours by our incredible instructors. We have spread to Norway and Turkey, with around 60 volunteers in total.
 
@@ -52,3 +52,5 @@ I have found it is important to always remember we are all human beings. This tr
 8. But we are all alive (similar to lesson 3).
 
 I am sure there are many more lessons and I may come to update this post in the future as they become apparent to me. However for now that feels complete.
+
+We have also learned a lot as a living social organism. Although this is a part time activity for all of us, it has begun to grow into more than that. So how do I see the future for this experiment? 
