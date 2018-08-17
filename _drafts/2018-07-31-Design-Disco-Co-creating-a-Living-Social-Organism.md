@@ -54,4 +54,20 @@ I have found it is important to always remember we are all human beings. This tr
 
 I am sure there are many more lessons and I may come to update this post in the future as they become apparent to me. However for now that feels complete.
 
-We have also learned a lot as a living social organism. Although this is a part time activity for all of us, it has begun to grow into more than that. So how do I see the future for this experiment? 
+We have also learned a lot as a living social organism (organization). Although this is a part time activity for all of us, it has begun to grow into more than that. So how do I see the future for this experiment? 
+
+The longer I spend thinking and experiencing. The more I can observe and deduce. However, until I step into action, I will never learn. If we are really going to explore and discover design and its meaningful potential in each persons life, I believe we need to understand the underlying architecture of impactful work. From my observations, this architecture is distributed, close to the edges, and on the ground. Making in person contact, learning through doing, sharing experience with many others and playing a dance of personal exploration and collective learning. Collective action, and personal fulfillment. 
+
+I am absolutely sure that design discovery will continue to grow in the world, and I believe that as a movement and as a catalyst,  Design Disco will continue to be apart of that growth. We have a wide field of potential, we are in a space wholly outdated in its methods and practice: education. Our generation is an internet generation, we value experience over possession, networks over hierarchies, and intrinsic over extrinsic motivation. 
+
+When thinking of the social organism of Design Disco, I envision a scaled ecosystem of many Design Discovery ventures across the world. Ranging from suplamentary university courses, to high school workshops, summer programs, team design thinking workshops, conferences on design and design thinking and much more. I can see a an ecosystem of networks of collective teams, sharing knowledge internally and externally to catalyze an exponential growth of access to and understanding of design thinking. Some very interesting new types of organizing patterns for distributed self organizing teams are being developed and shared openly by organizations such as, [Ouishare](http://opensource.ouishare.net/ "Ouishare Open Source"), [Enspiral](https://handbook.enspiral.com/ "Enspiral Network Handbook"), [Gini](https://drive.google.com/file/d/0B44XthBdMmN6bGlfdk8zejdSZUU/view "Gini Company Handbook"), [Crisp](https://drive.google.com/file/d/0B44XthBdMmN6bGlfdk8zejdSZUU/view "Crisp DNA"), and [Valve](https://steamcdn-a.akamaihd.net/apps/valve/Valve_NewEmployeeHandbook.pdf "Valve Company Handbook").
+
+There are a plethora of wonderful ideas that come to my mind which I believe will play into the future of Design Disco. Such as: creating new distributed crediting systems for courses so that the majority of learning which takes place outside of universities can be better valued and made visible. Being part of the maker and Fablab movements, bringing design thinking into this space of tinkering and making. Experimenting with new forms of social organizing using new forms of current-sees (symbol systems which make value visible) in order to empower our social living organism to steer itself collectively and in a highly agile fashion. 
+
+I could go on and on, but I should probably get to working on it already instead of just dreaming. 
+
+ If you are curious about Design Disco and how you could get involved, please don't hesitate to get in touch with me via email or on social media. We are always looking for new passionate members, including those who have a background in something other than design. 
+
+If you want to stay up to date on our development follow us on [Facebook](https://facebook.com/designdisco "Design Disco Facebook") and [Instagram](https://instagram.com/designdisco_ "Design Disco Instagram"). Also check out [our blog](http://designdisco.org/blog "Design Disco Blog"). 
+
+Thank you very much for reading! I hope that some of what I discussed may have sparked your interest.
