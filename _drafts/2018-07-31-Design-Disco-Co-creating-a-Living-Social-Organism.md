@@ -29,8 +29,9 @@ This may sound contrary to the previous lesson, however it can be in fact be sym
 As I mentioned the term social living organism. I have learned to see teams and our whole organization as a kind of living organism. Seeing through this lens is crucial to cultivating an adaptive innovative social organism. How we name the world, influences our perception of the world. As Goethe put it, "How we see people is how we treat them, and how we treat them is who they become." I find this idea can be applied to communities of people. As soon as we see them as alive, we begin to treat them with life, and thus they become more alive. And what is the key characteristic of life? Well that is a much larger question, but in this situation I was thinking it is the capacity to evolve, adapt and collaborate. These are some of the key principles of a living system:
 
 1. Divergent parts
-2. convergent whole
-3. dynamic relationships
+2. Convergent whole
+3. Dynamic relationships
+4. Ongoing self organizing
 
 Put succinctly: A living system integrates divergent parts, into a convergent whole, in dynamic relationship internally and externally, in an ongoing moment-by-moment process of self organizing and self creation.
 
