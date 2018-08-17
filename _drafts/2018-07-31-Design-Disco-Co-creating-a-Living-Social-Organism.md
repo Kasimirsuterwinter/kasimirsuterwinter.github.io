@@ -4,9 +4,10 @@ title: Co-creating the Living Social Organism Design Disco
 image: design-disco-featured-image.jpg
 categories:
 - 
+- Design Disco
 
 ---
-Over the past 3 years I have been involved in the co-creation of Design Disco. No, it is not a disco club. The "Disco" stands for Discovery, although we also like to have a good time. In this post I want to try and outline some of the lessons I have learned being part of this experiment, and my vision for the future of our organization.
+Over the past three years I have been involved in the co-creation of [Design Disco](https://designdisco.org "Design Disco"). No, it is not a disco club. The "Disco" stands for Discovery, although we also like to have a good time. In this post I want to try and outline some of the lessons I have learned being part of this experiment, and my vision for the future of our organization.
 
 First off I should share a bit of what this whole disco things is about. We are a non profit organization with the mission to show people the world through the window of design. Meaning, we essentially want everyone to discover design, and how they can use design thinking in their everyday lives to "dissolve" problems they face.
 
@@ -71,3 +72,10 @@ I could go on and on, but I should probably get to working on it already instead
 If you want to stay up to date on our development follow us on [Facebook](https://facebook.com/designdisco "Design Disco Facebook") and [Instagram](https://instagram.com/designdisco_ "Design Disco Instagram"). Also check out [our blog](http://designdisco.org/blog "Design Disco Blog"). 
 
 Thank you very much for reading! I hope that some of what I discussed may have sparked your interest.
+
+### Inspirations for this article:
+
+* Very geeky talk on [new internet architectures](https://www.youtube.com/watch?v=wBlwQpcV95M) by Arthur Brock. 
+* Meta Currency [talk on the future digital currencies]() and how they will allow us to form new social living organisms. 
+* Great video from an Enspiral member about [circles of harmless organizing](https://www.youtube.com/watch?v=b9ar0HVzNeE&t=981s). 
+* Fablabs are something I am really excited about always so I'll just [through this in here](https://www.fablabs.io/). 
