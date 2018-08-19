@@ -3,7 +3,7 @@ layout: posts
 title: Co-creating the Living Social Organism Design Disco
 image: design-disco-featured-image.jpg
 categories:
--
+- 
 - Design Disco
 
 ---
@@ -75,7 +75,7 @@ Thank you very much for reading! I hope that some of what I discussed may have s
 
 #### Inspirations for this article:
 
-* Very geeky talk on [new internet architectures](https://www.youtube.com/watch?v=wBlwQpcV95M) by Arthur Brock.
-* Meta Currency [talk on the future digital currencies]() and how they will allow us to form new social living organisms.
-* Great video from an Enspiral member about [circles of harmless organizing](https://www.youtube.com/watch?v=b9ar0HVzNeE&t=981s).
-* Fablabs are something I am really excited about always so I'll just [through this in here](https://www.fablabs.io/).
+1. Very geeky talk on [new internet architectures](https://www.youtube.com/watch?v=wBlwQpcV95M) by Arthur Brock.
+2. Meta Currency [talk on the future digital currencies]() and how they will allow us to form new social living organisms.
+3. Great video from an Enspiral member about [circles of harmless organizing](https://www.youtube.com/watch?v=b9ar0HVzNeE&t=981s).
+4. Fablabs are something I am really excited about always so I'll just [through this in here](https://www.fablabs.io/).
