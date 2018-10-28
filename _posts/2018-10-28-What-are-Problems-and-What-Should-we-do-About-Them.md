@@ -36,11 +36,11 @@ Problem solving usually involves research, often using experimentation, quantita
 
 Unfortunately, few problems, once solved, stay that way. Solutions deteriorate by causes like:
 
-      Changes in the environment.
+Changes in the environment.
 
-      Changing societal goals.
+Changing societal goals.
 
-      New information.
+New information.
 
 Moreover, solutions generally do not exist in isolation from  other problems. Solutions obtained to problems isolated from the other  problems with which they interact generally produce one or more new  problems. These are often more serious and difficult to solve than the  original problem.
 
