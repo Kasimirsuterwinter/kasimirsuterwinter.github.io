@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Currencies, We have been using the tool all wrong!
-image: jekyll-featured-image.png
+image: 
 categories:
   -
 ---

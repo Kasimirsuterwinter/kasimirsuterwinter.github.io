@@ -1,9 +1,9 @@
 ---
 layout: posts
 title: Co-creating the Living Social Organism Design Disco
-image: design-disco-featured-image.jpg
+image: design-disco-featured-image.png
 categories:
-- 
+-
 - Design Disco
 
 ---

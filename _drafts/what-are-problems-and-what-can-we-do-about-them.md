@@ -1,13 +1,13 @@
 ---
-title: What are problems and how can we treat them?
+title: What are problems and how should we do about them?
 date: 2018-08-16 10:06:38 +0000
 layout: posts
-image: ''
+image: 
 categories:
 - Design Thinking
 
 ---
-When we think about problems in the world. We often want to remedy them. To do something which will make them no longer exist. So we commonly use the term "solve" as the action we will take to treat the problem. This sounds very good, and it is largely the motto of our scientific technological endeavors. But we must understand the nature of "problems" and the meaning of "solving" a little better.
+When we think about problems in the world. We often want to remedy them. To do something which will make them no longer exist. So we commonly use the term "solve" as the action we will take to treat the problem. This sounds very good, "we will solve problems" and it is largely the motto of our scientific technological endeavors. But we must understand the nature of "problems" and the meaning of "solving" a little better.
 
 For instance what we call problems are often symptoms, and the true nature of the problem is a cause which we cannot see as easily. If you are to receive a tooth filling, you may think you have solved the problem, however you are only treating the symptom. To truly do away with the problem of cavities, we must redesign the behavior which is the cause of cavities. Namely, brushing your teach regularly and eating less candy.
 
