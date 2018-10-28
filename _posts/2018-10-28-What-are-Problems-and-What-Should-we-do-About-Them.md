@@ -1,6 +1,6 @@
 ---
 title: What are problems and what should we do about them?
-date: 2018-08-16 10:06:38 +0000
+date: 2018-10-28 11:06:38 +0000
 layout: posts
 image: problems-vs-symptoms-featured-image.png
 categories:
