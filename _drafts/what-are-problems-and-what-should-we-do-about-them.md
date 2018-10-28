@@ -2,7 +2,7 @@
 title: What are problems and what should we do about them?
 date: 2018-08-16 10:06:38 +0000
 layout: posts
-image:
+image: 
 categories:
 - Design Thinking
 
