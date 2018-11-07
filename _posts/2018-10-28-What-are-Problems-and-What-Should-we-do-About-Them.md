@@ -1,5 +1,5 @@
 ---
-title: What are problems and what should we do about them?
+title: What are problems and what can we do about them?
 date: 2018-10-28 11:06:38 +0000
 layout: posts
 image: problems-vs-symptoms-featured-image.png
@@ -54,4 +54,4 @@ This article comes streight out of the thinking of Russell L. Ackoff. Originally
 
 You can find a really [powerful presentation by him](https://www.youtube.com/watch?v=EbLh7rZ3rhU "Russel Ackoff on Youtube") on YouTube. It is a bit long, but if you found the ideas in this article interesting, I highly recommend the video. He covers these topics and more in very eloquent understandable ways.
 
-Thanks for reading! 
+Thanks for reading!
