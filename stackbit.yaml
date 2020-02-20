@@ -95,18 +95,29 @@ models:
       - type: markdown
         name: introduction
         label: Introduction
-  posts:
-    type: posts
-    label: Post
-    layout: posts
-    file: posts.html
+
+pagesDir: _posts
+models:
+  article:
+    type: page
+    label: Article
+    folder: _posts
+    match:
+      - "**/*"
     fields:
+      - type: layout
+        name: Posts
+        label: posts
+        file: posts.html
       - type: string
         name: title
-        label: title
-      - type: image
+        label: Title
+        description: The title of the page.
+        required: true
+      - type: string
         name: image
-        label: image
+        label: Image
+        description: the articles image
       - type: string
         name: categories
         label: categories
