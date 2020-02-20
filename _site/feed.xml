@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-28T11:31:32+00:00</updated><id>http://localhost:4000/</id><title type="html">Kasimir Suter Winter</title><subtitle>My personal piece of the web. Come join my explorations into design, architecture, coding and life.</subtitle><entry><title type="html">Co-creating the Living Social Organism Design Disco</title><link href="http://localhost:4000/design%20disco/2018/07/31/Design-Disco-Co-creating-a-Living-Social-Organism.html" rel="alternate" type="text/html" title="Co-creating the Living Social Organism Design Disco" /><published>2018-07-31T00:00:00+00:00</published><updated>2018-07-31T00:00:00+00:00</updated><id>http://localhost:4000/design%20disco/2018/07/31/Design-Disco-Co-creating-a-Living-Social-Organism</id><content type="html" xml:base="http://localhost:4000/design%20disco/2018/07/31/Design-Disco-Co-creating-a-Living-Social-Organism.html">&lt;p&gt;Over the past three years I have been involved in the co-creation of &lt;a href=&quot;https://designdisco.org&quot; title=&quot;Design Disco&quot;&gt;Design Disco&lt;/a&gt;. No, it is not a disco club. The “Disco” stands for Discovery, although we also like to have a good time. In this post I want to try and outline  some of the lessons I have learned while being part of this experiment, and  my vision for the future of what could come.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-06T20:41:19+00:00</updated><id>http://localhost:4000/</id><title type="html">Kasimir Suter Winter</title><subtitle>My personal piece of the web. Come join my explorations into design, architecture, coding and life.</subtitle><entry><title type="html">What are problems and what can we do about them?</title><link href="http://localhost:4000/design%20thinking/2018/10/28/What-are-Problems-and-What-Should-we-do-About-Them.html" rel="alternate" type="text/html" title="What are problems and what can we do about them?" /><published>2018-10-28T11:06:38+00:00</published><updated>2018-10-28T11:06:38+00:00</updated><id>http://localhost:4000/design%20thinking/2018/10/28/What-are-Problems-and-What-Should-we-do-About-Them</id><content type="html" xml:base="http://localhost:4000/design%20thinking/2018/10/28/What-are-Problems-and-What-Should-we-do-About-Them.html">&lt;p&gt;When we think about problems in the world. We often want to remedy them. To do something which will make them no longer exist. So we commonly use the term “solve” as the action we will take to treat the problem. This sounds very good, “we will solve problems” and it is largely the motto of our scientific technological endeavors. But we must understand the nature of “problems” and the meaning of “solving” a little better.&lt;/p&gt;
+
+&lt;p&gt;For instance what we call problems are often symptoms, and the true nature of the problem is a cause which we cannot see as easily. If you are to receive a tooth filling, you may think you have solved the problem, however you are only treating the symptom. To truly do away with the problem of cavities, we must redesign the behavior which is the cause of cavities. Namely, brushing your teach regularly and eating less candy.&lt;/p&gt;
+
+&lt;p&gt;This brings me to four different ways problems can be treated:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Absolution.&lt;/li&gt;
+  &lt;li&gt;Resolution.&lt;/li&gt;
+  &lt;li&gt;Solution.&lt;/li&gt;
+  &lt;li&gt;Dissolution.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Absolution&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Absolution means to ignore a problem and hope it will solve itself or go away of its own accord.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Resolution&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Resolution, your 2nd problem solving option, means to  employ behavior previously used in similar situations, adapted if  necessary, so as to obtain an outcome that is good enough.&lt;/p&gt;
+
+&lt;p&gt;This approach to problems relies heavily on experience, trial and  error, qualitative judgment, and so-called common sense. It is the  approach to problems most commonly used by those who govern and those  who manage public processes. Moreover, this approach has little lasting  power because it deals with symptoms and short-term effects, but does  not eliminate the cause of a problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Solution&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Solution means to  discover or create behavior that yields the best, or approximately the  best, possible outcome, one that “optimizes” the situation.&lt;/p&gt;
+
+&lt;p&gt;Problem solving usually involves research, often using experimentation, quantitative analysis, and uncommon sense.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, few problems, once solved, stay that way. Solutions deteriorate by causes like:&lt;/p&gt;
+
+&lt;p&gt;Changes in the environment.&lt;/p&gt;
+
+&lt;p&gt;Changing societal goals.&lt;/p&gt;
+
+&lt;p&gt;New information.&lt;/p&gt;
+
+&lt;p&gt;Moreover, solutions generally do not exist in isolation from  other problems. Solutions obtained to problems isolated from the other  problems with which they interact generally produce one or more new  problems. These are often more serious and difficult to solve than the  original problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. Dissolution&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Dissolution, means to  redesign either the society that has the problem or its environment in  such a way as to eliminate the problem or the conditions that caused it,  thus enabling the society involved to do better in the future than the  best it can do today.&lt;/p&gt;
+
+&lt;p&gt;The methodologies used to do this are called &lt;a href=&quot;https://en.wikipedia.org/wiki/Design_thinking&quot; title=&quot;Design Thinking on Wikipedia&quot;&gt;Design Thinking&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Systems_theory&quot; title=&quot;Systems Theory on Wikipedia&quot;&gt;System Thinking&lt;/a&gt;. They are not always easy ways of thinking, but the rewards are well worth your trouble!&lt;/p&gt;
+
+&lt;p&gt;This article comes streight out of the thinking of Russell L. Ackoff. Originally trained as an architect, and a pioneer in the field of &lt;a href=&quot;https://en.wikipedia.org/wiki/Operations_research&quot; title=&quot;Operations research&quot;&gt;operations research&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Systems_thinking&quot; title=&quot;Systems thinking&quot;&gt;systems thinking&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Management_science&quot; title=&quot;Management science&quot;&gt;management science&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can find a really &lt;a href=&quot;https://www.youtube.com/watch?v=EbLh7rZ3rhU&quot; title=&quot;Russel Ackoff on Youtube&quot;&gt;powerful presentation by him&lt;/a&gt; on YouTube. It is a bit long, but if you found the ideas in this article interesting, I highly recommend the video. He covers these topics and more in very eloquent understandable ways.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!&lt;/p&gt;</content><author><name></name></author><summary type="html">When we think about problems in the world. We often want to remedy them. To do something which will make them no longer exist. So we commonly use the term “solve” as the action we will take to treat the problem. This sounds very good, “we will solve problems” and it is largely the motto of our scientific technological endeavors. But we must understand the nature of “problems” and the meaning of “solving” a little better.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/problems-vs-symptoms-featured-image.png" /></entry><entry><title type="html">Co-creating the Living Social Organism Design Disco</title><link href="http://localhost:4000/design%20disco/2018/07/31/Design-Disco-Co-creating-a-Living-Social-Organism.html" rel="alternate" type="text/html" title="Co-creating the Living Social Organism Design Disco" /><published>2018-07-31T00:00:00+00:00</published><updated>2018-07-31T00:00:00+00:00</updated><id>http://localhost:4000/design%20disco/2018/07/31/Design-Disco-Co-creating-a-Living-Social-Organism</id><content type="html" xml:base="http://localhost:4000/design%20disco/2018/07/31/Design-Disco-Co-creating-a-Living-Social-Organism.html">&lt;p&gt;Over the past three years I have been involved in the co-creation of &lt;a href=&quot;https://designdisco.org&quot; title=&quot;Design Disco&quot;&gt;Design Disco&lt;/a&gt;. No, it is not a disco club. The “Disco” stands for Discovery, although we also like to have a good time. In this post I want to try and outline  some of the lessons I have learned while being part of this experiment, and  my vision for the future of what could come.&lt;/p&gt;
 
 &lt;p&gt;First off I should share a bit of what this whole disco things is about. We are a non profit organization with the mission to show people the world through the window of design. Meaning, we essentially want everyone to discover design, and how they can use design thinking in their everyday lives to “dissolve” problems they face.&lt;/p&gt;
 

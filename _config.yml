@@ -1,4 +1,6 @@
 ---
+baseurl: "/"
+permalink: "/posts/:slug:output_ext"
 title: Kasimir Suter Winter
 email: kasimirsw@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
