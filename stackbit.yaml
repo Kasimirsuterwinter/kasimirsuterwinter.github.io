@@ -96,8 +96,6 @@ models:
         name: introduction
         label: Introduction
 
-pagesDir: _posts
-models:
   article:
     type: page
     label: Article
