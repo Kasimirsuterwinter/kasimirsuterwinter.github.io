@@ -119,3 +119,27 @@ models:
       - type: string
         name: categories
         label: categories
+
+  work:
+    type: page
+    label: Work
+    folder: _work
+    layout: work
+    match:
+      - "**/*"
+    fields:
+      - type: layout
+        name: work
+        label: work
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page.
+        required: true
+      - type: string
+        name: image
+        label: Image
+        description: the articles image
+      - type: string
+        name: categories
+        label: categories
