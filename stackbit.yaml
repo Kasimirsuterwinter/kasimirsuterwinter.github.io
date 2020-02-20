@@ -107,7 +107,6 @@ models:
       - type: layout
         name: Posts
         label: posts
-        file: posts.html
       - type: string
         name: title
         label: Title
