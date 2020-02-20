@@ -120,7 +120,7 @@ models:
         name: categories
         label: categories
 
-  work:
+  article:
     type: page
     label: Work
     folder: _work
