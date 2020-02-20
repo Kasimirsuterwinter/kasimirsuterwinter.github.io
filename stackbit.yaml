@@ -98,8 +98,9 @@ models:
 
   article:
     type: page
-    label: Article
+    label: Blog
     folder: _posts
+    layout: posts
     match:
       - "**/*"
     fields:
