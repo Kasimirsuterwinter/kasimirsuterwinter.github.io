@@ -35,15 +35,14 @@ models:
       - type: string
         label: Time Zone
         name: timezone
-        collections:
-          posts:
-            - type: string
-              name: Title
-              label: title
-          work:
-            - type: string
-              name: title
-              label: Title
+        posts:
+          - type: string
+            name: Title
+            label: title
+        work:
+          - type: string
+            name: title
+            label: Title
 
 
   index:
