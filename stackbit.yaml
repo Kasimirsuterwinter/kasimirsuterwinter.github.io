@@ -95,17 +95,18 @@ models:
       - type: markdown
         name: introduction
         label: Introduction
-      - type: list
-        name: questions
-        label: Questions
-        description: List of questions to show on the FAQ page
-        items:
-          type: object
-          labelField: question
-          fields:
-            - type: string
-              name: question
-              label: Question
-            - type: markdown
-              name: answer
-              label: Answer
+  posts:
+    type: posts
+    label: Post
+    layout: posts
+    file: posts.html
+    fields:
+      - type: string
+        name: title
+        label: title
+      - type: image
+        name: image
+        label: image
+      - type: string
+        name: categories
+        label: categories
