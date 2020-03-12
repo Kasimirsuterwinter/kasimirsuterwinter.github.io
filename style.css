@@ -212,7 +212,6 @@ h3:hover {
   align-items: center;
 }
 
-}
 .logo img {
 width: 16vw;
 }
@@ -236,7 +235,8 @@ header {
 .menu-list a {
   display: block;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 20px;
+  flex-direction: row;
   line-height: 70px;
 }
 
@@ -252,10 +252,20 @@ header {
   width: 50px;
 }
 
+.white_hamberger {
+  color: white;
+}
+
+
 label {
   margin: 0 40px 0 0;
   font-size: 30px;
   line-height: 0px;
+  display: none;
+}
+
+label:hover {
+  color: #D5AB8F;
 }
 
 #toggle {
@@ -263,12 +273,12 @@ label {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     label {
       display: block;
       cursor: pointer;
       position: fixed;
-      top: 70px;
+      top: 65px;
       right: 10px;
     }
     .menu {
@@ -276,26 +286,25 @@ label {
       width: 90vw;
     }
 
-    li {
+     .nav {
       display: none;
     }
 
-    }
-    .menu-list{
+    .menu-list {
       text-align: center;
       width: 100%;
       display: flex;
       flex-direction: column;
     }
 
-    }
     .menu-list a {
       display: block;
       text-decoration: none;
-      line-height: 50px;
+      line-height: 30px;
     }
-    #toggle:checked + li {
-      display: block;
+
+    input:checked + .nav{
+      display: inline;
     }
 }
 
