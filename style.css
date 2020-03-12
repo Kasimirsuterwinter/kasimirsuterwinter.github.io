@@ -119,7 +119,6 @@ img {
   font-family: "CodeMono-Regular";
   color: black;
   font-size: 16px;
-  padding-left: 6vw;
   text-decoration: none;
 }
 .menu-dark p {
@@ -133,7 +132,6 @@ img {
   font-family: "CodeMono-Regular";
   color: #F1ECE9;
   font-size: 16px;
-  padding-left: 6vw;
   text-decoration: none;
 }
 
@@ -193,7 +191,6 @@ h3:hover {
       grid-template-rows: auto auto auto auto;
       grid-gap: 1vw;
       margin: 35px;
-      padding-top: 70px;
 
     }
 
@@ -207,9 +204,12 @@ h3:hover {
 
 .menu {
   position: fixed;
-  top: 10px;
+  top: 40px;
   height: 70px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 }
@@ -223,20 +223,82 @@ header {
 
 }
 
-nav {
-  float: right;
-  padding-right: 7vw;
+.nav {
+  padding-right: 30px;
+  height: 70px;
 }
 
-li.menu-list {
-  display: inline-block;
-  padding-right: 1vw;
+.menu-list {
+  margin: 0 30px 0 0;
 }
+
+
+.menu-list a {
+  display: block;
+  text-decoration: none;
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+.nav ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+
 
 .logo {
   position: realtive;
   width: 50px;
-  margin-top: 30px; }
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 30px;
+  line-height: 0px;
+}
+
+#toggle {
+  display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    label {
+      display: block;
+      cursor: pointer;
+      position: fixed;
+      top: 70px;
+      right: 10px;
+    }
+    .menu {
+      display: block;
+      width: 90vw;
+    }
+
+    li {
+      display: none;
+    }
+
+    }
+    .menu-list{
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    }
+    .menu-list a {
+      display: block;
+      text-decoration: none;
+      line-height: 50px;
+    }
+    #toggle:checked + li {
+      display: block;
+    }
+}
+
 
 
 
