@@ -18,3 +18,4 @@ plugins:
 - jekyll-seo-tag
 - jemoji
 - jekyll-feed
+- jekyll-sitemap
