@@ -1,0 +1,17 @@
+contact:
+  email_display: hello(at)kasimirsuterwinter.com
+  location: Prague, Czechia
+social_links:
+  - label: Github
+    url: https://github.com/Kasimirsuterwinter
+  - label: Instagram
+    url: https://www.instagram.com/kasimirsuterwinter/
+  - label: Medium
+    url: https://medium.com/@kasimirsw
+  - label: Facebook
+    url: https://www.facebook.com/kasimir.suterwinter
+github_repo_url: https://github.com/Kasimirsuterwinter/kasimirsuterwinter.github.io
+license:
+  label: CC Attribution-ShareAlike 4.0 International License
+  url: http://creativecommons.org/licenses/by-sa/4.0/
+credit: "&lt;/&gt; with <3 by Kasimir Suter Winter"

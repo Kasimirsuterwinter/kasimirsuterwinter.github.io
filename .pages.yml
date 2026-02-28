@@ -1,0 +1,143 @@
+media:
+  input: assets/images
+  output: /assets/images
+
+content:
+  - name: home
+    label: Home Page
+    type: file
+    path: index.html
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: layout
+        label: Layout
+        type: string
+      - name: navigation_weight
+        label: Navigation Weight
+        type: number
+      - name: body
+        label: Body
+        type: rich-text
+
+  - name: blog
+    label: Blog Page
+    type: file
+    path: blog.html
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: layout
+        label: Layout
+        type: string
+      - name: navigation_weight
+        label: Navigation Weight
+        type: number
+      - name: body
+        label: Body
+        type: rich-text
+
+  - name: work
+    label: Work Page
+    type: file
+    path: work.html
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: layout
+        label: Layout
+        type: string
+      - name: navigation_weight
+        label: Navigation Weight
+        type: number
+      - name: body
+        label: Body
+        type: rich-text
+
+  - name: posts
+    label: Posts
+    type: collection
+    path: _posts
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [title, date, categories]
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: image
+        label: Featured Image
+        type: image
+      - name: categories
+        label: Categories
+        type: string
+        list: true
+      - name: date
+        label: Date
+        type: date
+      - name: excerpt_separator
+        label: Excerpt Marker
+        type: string
+        required: false
+        default: "<!-- excerpt -->"
+      - name: layout
+        label: Layout
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+
+  - name: work_items
+    label: Work Items
+    type: collection
+    path: _work
+    filename: "{primary}.md"
+    view:
+      fields: [title, style, categories]
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: image
+        label: Featured Image
+        type: image
+      - name: style
+        label: Style
+        type: string
+      - name: categories
+        label: Categories
+        type: string
+        list: true
+      - name: layout
+        label: Layout
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+
+globals:
+  - name: site_settings
+    label: Site Settings
+    path: _config.yml
+    fields:
+      - name: title
+        label: Site Title
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: timezone
+        label: Timezone
+        type: string

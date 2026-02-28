@@ -96,6 +96,79 @@ models:
         name: introduction
         label: Introduction
 
+
+  home_content:
+    type: data
+    label: Home content
+    file: _data/home.yml
+    singleInstance: true
+    fields:
+      - type: list
+        name: cover_statement_lines
+        label: Cover statement lines
+        items:
+          type: string
+      - type: list
+        name: body_statements
+        label: Body statements
+        items:
+          type: text
+      - type: object
+        name: cv
+        label: CV link
+        fields:
+          - type: string
+            name: label
+            label: Label
+          - type: string
+            name: url
+            label: URL
+
+  footer_content:
+    type: data
+    label: Footer content
+    file: _data/footer.yml
+    singleInstance: true
+    fields:
+      - type: object
+        name: contact
+        label: Contact
+        fields:
+          - type: string
+            name: email_display
+            label: Email
+          - type: string
+            name: location
+            label: Location
+      - type: list
+        name: social_links
+        label: Social links
+        items:
+          type: object
+          fields:
+            - type: string
+              name: label
+              label: Label
+            - type: string
+              name: url
+              label: URL
+      - type: string
+        name: github_repo_url
+        label: Github repository URL
+      - type: object
+        name: license
+        label: License
+        fields:
+          - type: string
+            name: label
+            label: Label
+          - type: string
+            name: url
+            label: URL
+      - type: string
+        name: credit
+        label: Footer credit
+
   article:
     type: page
     label: Blog
