@@ -6,24 +6,21 @@ navigation_weight: 1
 menu_style: light
 background: k_image
 ---
+{% assign home_data = site.data.home %}
 <div class="front-cover">
  <div class="cover-statement-home">
-    I believe in <br/>
-    a human scale, <br/>
-    open source world <br/>
+    {% for line in home_data.cover_statement_lines %}
+    {{ line }} <br/>
+    {% endfor %}
  </div>
 </div>
 <div class="content-half">
+  {% for statement in home_data.body_statements %}
   <div class="body-statement-home">
-    I am on a search for new better paths. Paths of higher levels of social organizing which can catalyze our humanity. I find myself obsessed with architectures of the non physical. As it appears, these are often the actual shapers of our world.
+    {{ statement }}
   </div>
+  {% endfor %}
   <div class="body-statement-home">
-    Currently living in Prague, CZ. I am passionate about open source, local distributed manufacturing, and equitable social models for the post capitalist economy. Such as commons networks/ecosystems, and recently crypto economics and <a href="https://holochain.org/">Holochain</a>.
-  </div>
-  <div class="body-statement-home">
-    I help lead <a href="http://www.designdisco.org/">Design Disco</a>, a non-profit organization teaching design and design thinking to the youth. I belive everyone can be a designer because design is a problem solving strategy which sees no bordres between professions and disciplins.
-  </div>
-  <div class="body-statement-home">
-    <a href="/assets/documents/180718_Curriculum_Vitae_KSW.pdf">Curriculum Vitae</a>
+    <a href="{{ home_data.cv.url }}">{{ home_data.cv.label }}</a>
   </div>
 </div>
