@@ -6,4 +6,21 @@ My site is free to copy and personalize for your own portfolio. It is built with
 
 I also publish articles so feel free to check out the blog at [kasimirsuterwinter.github.io/blog](kasimirsuterwinter.github.io/blog)
 
+## Local development
+
+This site uses the `github-pages` gem baseline.
+
+```powershell
+bundle config set --local path vendor/bundle
+bundle install
+bundle exec jekyll serve --host 127.0.0.1 --port 4000
+```
+
+For full build validation:
+
+```powershell
+bundle exec jekyll build
+ruby scripts/validate_content_model.rb
+```
+
 

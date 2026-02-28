@@ -5,6 +5,7 @@ title: Kasimir Suter Winter
 email: kasimirsw@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   My personal piece of the web. Come join my explorations into design, architecture, coding and life.
+url: "https://kasimirsuterwinter.github.io"
 timezone: UTC
 collections:
   posts:

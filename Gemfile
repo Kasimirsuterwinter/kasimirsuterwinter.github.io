@@ -2,10 +2,6 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem "jekyll", "~> 3.8.4"
-
-group :jekyll_plugins do
-    gem "jekyll-seo-tag", "~> 2.6.1"
-    gem "jemoji", "~> 0.11.1"
-    gem "jekyll-feed", "~> 0.13.0"
-end
+gem "github-pages", group: :jekyll_plugins
+gem "tzinfo-data", ">= 1.2024.1", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "wdm", ">= 0.1.0", platforms: [:mingw, :mswin, :x64_mingw]
