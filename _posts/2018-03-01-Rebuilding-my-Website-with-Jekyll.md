@@ -2,9 +2,9 @@
 layout: posts
 title: Rebuilding my Website with Jekyll and CSS Grid
 image: jekyll-featured-image.png
-excerpt_seperator: "<!-- excerpt -->"
+excerpt_separator: "<!-- excerpt -->"
 categories:
-- 
+- Web Development
 
 ---
 For years I have been struggling with Wordpress and it's many plugins and themes. This lead me to slowly learn more and more HTML and CSS. I never liked the idea of coding a website from scratch, I felt it was not very efficient. When I learned about [git](git-scm.com) I had this idea about how website templates could be built in [Github](github.com) and then hosted directly from a repository. Using the git workflow, everyone would be able to fork and submit pull requests for any website on the internet. Well, low and behold that literally exists! It is called [Github Pages](pages.github.com) and its super cool. 
