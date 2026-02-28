@@ -9,9 +9,12 @@ navigation_weight: 3
   <ul class="blog-grid">
     <a href="/blog"><h3 class="bold"> Blog </h3></a>
     {% for post in site.posts %}
-    <li class="post-list-grid">
+    {% assign post_image = post.image | default: site.data.site_defaults.fallback_image %}
+    {% assign post_description = post.description | default: post.excerpt | strip_html | truncate: 160 | default: site.description %}
+    {% assign post_category = post.categories | first | default: post.category | default: site.data.site_defaults.fallback_category %}
+    <li class="post-list-grid" data-category="{{ post_category }}">
       <a class="post-list-title" href="{{ post.url }}"><h1 class="offset-right" >{{ post.title }}</h1></a>
-      <a href="{{ post.url }}"><img class="post-list-image" src="/assets/images/{{ post.image }}"></a>
+      <a href="{{ post.url }}"><img class="post-list-image" src="/assets/images/{{ post_image }}" alt="{{ post_description }}"></a>
       <p class="post-list-date"> {{ post.date | date: '%B %d %Y' }}</p>
     </li>
     {% endfor %}

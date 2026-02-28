@@ -7,8 +7,11 @@ navigation_weight: 2
 <div class="grid-area">
   <div class="work-grid">
     {% for work in site.work %}
-    <div id="{{ work.style }}" class="{{ work.style }}" class="align-center" >
-      <a href="{{ work.url }}" ><img class="work-thumbnails" src="/assets/images/{{ work.image }}" ></a>
+    {% assign work_image = work.image | default: site.data.site_defaults.fallback_image %}
+    {% assign work_description = work.description | default: work.excerpt | strip_html | truncate: 160 | default: site.description %}
+    {% assign work_category = work.categories | first | default: work.category | default: site.data.site_defaults.fallback_category %}
+    <div id="{{ work.style }}" class="{{ work.style }}" class="align-center" data-category="{{ work_category }}" >
+      <a href="{{ work.url }}" ><img class="work-thumbnails" src="/assets/images/{{ work_image }}" alt="{{ work_description }}" ></a>
 <!--      <p class="work-thumbnail-title"><a href="{{ work.url }}">{{ work.title }}</a> // {{ work.categories }}</p> -->
     </div>
 

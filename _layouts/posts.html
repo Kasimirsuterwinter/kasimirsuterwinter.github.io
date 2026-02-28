@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+{% assign post_image = page.image | default: site.data.site_defaults.fallback_image %}
+{% assign post_description = page.description | default: page.excerpt | strip_html | truncate: 160 | default: site.description %}
+{% assign post_category = page.categories | first | default: page.category | default: site.data.site_defaults.fallback_category %}
 <div class="grid-area">
   <div class="posts-grid">
     <div class="post-title">
@@ -9,8 +12,8 @@ layout: default
         <h1>{{ page.title }}</h1>
       </div>
     </div>
-    <div class="post-content">
-      <img src="/assets/images/{{ page.image }}">
+    <div class="post-content" data-category="{{ post_category }}">
+      <img src="/assets/images/{{ post_image }}" alt="{{ post_description }}">
       <p>{{ page.date | date: '%B %d %Y' }}</p>
 
       {{ content }}
