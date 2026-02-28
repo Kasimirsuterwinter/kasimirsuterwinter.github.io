@@ -6,6 +6,13 @@ My site is free to copy and personalize for your own portfolio. It is built with
 
 I also publish articles so feel free to check out the blog at [kasimirsuterwinter.github.io/blog](kasimirsuterwinter.github.io/blog)
 
+## Pages CMS
+
+This repo is configured for [Pages CMS](https://pagescms.org/) via `.pages.yml`.
+
+- CMS app: [https://app.pagescms.org](https://app.pagescms.org)
+- Setup/details: [docs/pages-cms-setup.md](docs/pages-cms-setup.md)
+
 ## Local development
 
 This site uses the `github-pages` gem baseline.
