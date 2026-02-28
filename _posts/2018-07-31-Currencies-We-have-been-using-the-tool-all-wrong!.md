@@ -1,10 +1,11 @@
 ---
 layout: posts
 title: Currencies, We have been using the tool all wrong!
-image:
+image: jekyll-featured-image.png
 published: false
+excerpt_separator: "<!-- excerpt -->"
 categories:
-  -
+  - Web Development
 ---
 
 

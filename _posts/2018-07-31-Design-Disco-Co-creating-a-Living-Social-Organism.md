@@ -3,8 +3,7 @@ layout: posts
 title: Co-creating the Living Social Organism Design Disco
 image: design-disco-featured-image.png
 categories:
--
-- Design Disco
+  - Design Disco
 
 ---
 Over the past three years I have been involved in the co-creation of [Design Disco](https://designdisco.org "Design Disco"). No, it is not a disco club. The "Disco" stands for Discovery, although we also like to have a good time. In this post I want to try and outline  some of the lessons I have learned while being part of this experiment, and  my vision for the future of what could come.
