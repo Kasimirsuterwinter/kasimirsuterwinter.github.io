@@ -1,26 +1,10 @@
 ---
-layout: default
 title: Profile
-description: A personal website to showcase the work and wonderings of Kasimir Suter Winter.
+description: "A personal website to showcase the work and wonderings of Kasimir
+  Suter Winter. "
+layout: default
 navigation_weight: 1
-menu_style: light
-background: k_image
 ---
-{% assign home_data = site.data.home %}
-<div class="front-cover">
- <div class="cover-statement-home">
-    {% for line in home_data.cover_statement_lines %}
-    {{ line }} <br/>
-    {% endfor %}
- </div>
-</div>
-<div class="content-half">
-  {% for statement in home_data.body_statements %}
-  <div class="body-statement-home">
-    {{ statement }}
-  </div>
-  {% endfor %}
-  <div class="body-statement-home">
-    <a href="{{ home_data.cv.url }}">{{ home_data.cv.label }}</a>
-  </div>
-</div>
+{% assign home\_data = site.data.home %}
+
+<div class="front-cover"><div class="cover-statement-home">{% for line in home_data.cover_statement_lines %} {{ line }}<br>{% endfor %}</div></div><div class="content-half">{% for statement in home_data.body_statements %}<div class="body-statement-home">{{ statement }}</div>{% endfor %}<div class="body-statement-home"><a href="{{ home_data.cv.url }}">{{ home_data.cv.label }}</a></div></div>
