@@ -46,31 +46,9 @@ content:
         type: string
       - name: background
         type: string
-
-  - name: home_content
-    label: Home Content
-    type: file
-    path: _data/home.yml
-    format: yaml
-    fields:
-      - name: cover_statement_lines
-        label: Cover statement lines
-        type: string
-        list: true
-      - name: body_statements
-        label: Body statements
+      - name: body
+        label: Page content
         type: text
-        list: true
-      - name: cv
-        label: CV link
-        type: object
-        fields:
-          - name: label
-            type: string
-            required: true
-          - name: url
-            type: string
-            required: true
 
   - name: blog_page
     label: Blog Page
@@ -89,6 +67,9 @@ content:
         type: text
       - name: navigation_weight
         type: number
+      - name: body
+        label: Page content
+        type: text
 
   - name: work_page
     label: Work Page
@@ -107,6 +88,9 @@ content:
         type: text
       - name: navigation_weight
         type: number
+      - name: body
+        label: Page content
+        type: text
 
   - name: posts
     label: Blog Posts

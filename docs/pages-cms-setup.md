@@ -12,7 +12,6 @@ This repository is now configured for [Pages CMS](https://pagescms.org/) with a 
 
 - **Site Settings** → `_config.yml` (`title`, `description`, `timezone`, `email`)
 - **Home Page** → `index.html`
-- **Home Content** → `_data/home.yml`
 - **Blog Page** → `blog.html`
 - **Work Page** → `work.html`
 - **Blog Posts** → `_posts/*.md`
@@ -31,5 +30,4 @@ This matches current templates where featured images are rendered from `/assets/
 
 - `settings.content.merge: true` is enabled so existing non-exposed keys are preserved when saving.
 - `layout` is hidden for posts and work entries to avoid accidental template changes.
-- Home text content is managed through `_data/home.yml`, which is consumed by `index.html` Liquid templates.
 - If needed later, add a second media group for documents in `assets/documents`.
