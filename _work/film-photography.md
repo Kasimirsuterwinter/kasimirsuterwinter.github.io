@@ -2,6 +2,10 @@
 layout: work
 title: Film Photography
 image: film-photography-featured-image.png
+images:
+  - film-photography-featured-image.png
+  - film-photography-featured-image.png
+  - film-photography-featured-image.png
 style: film-photography
 categories:
   - Photography

@@ -409,6 +409,8 @@ img.work-thumbnails {
 .post-title {
   grid-row: 1 / -1;
   grid-column: 2 / 3;
+  position: relative;
+  z-index: 1;
 }
 
 .offset-right {
@@ -427,6 +429,63 @@ img.work-thumbnails {
   max-width: 100%;
   margin-top: 80px;
   margin-bottom: 50px;
+}
+
+
+/* carousel */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.carousel-img {
+  display: block;
+  max-width: 100%;
+  margin: 0;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.05);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(241, 236, 233, 0.85);
+  border: none;
+  font-family: "CodeMono-Regular";
+  font-size: 1.5rem;
+  padding: 12px 16px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s;
+}
+
+.carousel-btn:hover {
+  background: rgba(241, 236, 233, 1);
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
+}
+
+.carousel-counter {
+  font-family: "CodeMono-Regular";
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* override the generic .post-content img margins when inside a carousel */
+.post-content .carousel img {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 
