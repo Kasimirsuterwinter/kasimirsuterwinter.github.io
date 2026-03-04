@@ -153,6 +153,11 @@ content:
       - name: image
         type: image
         description: Thumbnail image for the portfolio grid.
+      - name: images
+        type: image
+        label: Carousel Images
+        list: true
+        description: Multiple images shown in the carousel on the work detail page.
       - name: style
         type: string
         required: true
