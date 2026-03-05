@@ -1,0 +1,12 @@
+---
+title: Old Home Page 2018
+description: "The original 2018 homepage of Kasimir Suter Winter."
+layout: default
+permalink: /old-home-2018/
+navigation_weight: 99
+menu_style: light
+background: home
+---
+{% assign home_data = site.data.home %}
+
+<div class="front-cover"><div class="cover-statement-home">{% for line in home_data.cover_statement_lines %} {{ line }}<br>{% endfor %}</div></div><div class="content-half">{% for statement in home_data.body_statements %}<div class="body-statement-home">{{ statement }}</div>{% endfor %}<div class="body-statement-home"><a href="{{ home_data.cv.url }}">{{ home_data.cv.label }}</a></div></div>

@@ -1,12 +1,188 @@
 ---
-title: Profile
-description: "A personal website to showcase the work and wonderings of Kasimir
-  Suter Winter. "
+title: Kasimir Suter Winter
+description: "Architect, organizer, and builder working at the intersection of physical, digital, and ecological systems."
 layout: default
+menu_style: dark
 navigation_weight: 1
-menu_style: light
-background: home
 ---
-{% assign home_data = site.data.home %}
 
-<div class="front-cover"><div class="cover-statement-home">{% for line in home_data.cover_statement_lines %} {{ line }}<br>{% endfor %}</div></div><div class="content-half">{% for statement in home_data.body_statements %}<div class="body-statement-home">{{ statement }}</div>{% endfor %}<div class="body-statement-home"><a href="{{ home_data.cv.url }}">{{ home_data.cv.label }}</a></div></div>
+<canvas id="paint-canvas"></canvas>
+
+<div class="home-content">
+
+  <!-- Hero -->
+  <section class="home-section home-hero">
+    <h1>Kasimir<br>Suter Winter</h1>
+    <p class="home-tagline">Architect &middot; Organizer &middot; Builder</p>
+    <p class="home-teaser">Working at the intersection of physical, digital, and ecological systems &mdash; and the organizational architectures that shape them.</p>
+  </section>
+
+  <!-- Projects -->
+  <section class="home-section">
+    <p class="home-section-label">Ventures</p>
+    <div class="home-projects">
+
+      <a class="home-project-card" href="https://www.parti.design" target="_blank" rel="noopener">
+        <span class="home-project-tag">Architecture &amp; Design</span>
+        <h3>Parti Design</h3>
+        <p>Architecture and design agency for regenerative placemaking and participatory design, co-founded with Karina.</p>
+      </a>
+
+      <a class="home-project-card" href="https://www.massvis.se" target="_blank" rel="noopener">
+        <span class="home-project-tag">Commons Economy</span>
+        <h3>Massvis</h3>
+        <p>First fiscal host on Open Collective in Sweden &mdash; building financial infrastructure for the commons economy.</p>
+      </a>
+
+      <a class="home-project-card" href="https://www.umeakallbad.se" target="_blank" rel="noopener">
+        <span class="home-project-tag">Community</span>
+        <h3>Umeå Kallbad</h3>
+        <p>Co-founded Umeå&rsquo;s first public outdoor sauna &mdash; bringing people together around water and ritual.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Interests -->
+  <section class="home-interests">
+    <span class="home-interest-item">Physical Systems</span>
+    <span class="home-interest-item">Digital Systems</span>
+    <span class="home-interest-item">Ecological Systems</span>
+    <span class="home-interest-item">Organizational Architecture</span>
+    <span class="home-interest-item">Currency Design</span>
+    <span class="home-interest-item">Commons &amp; Mutual Aid</span>
+  </section>
+
+  <!-- Education -->
+  <section class="home-education">
+    <p>Masters of Architecture &mdash; Umeå School of Architecture, Umeå University</p>
+    <p>Bachelors of Architecture &mdash; Archip, Prague, Czechia</p>
+  </section>
+
+</div>
+
+<script>
+(function () {
+  var dpr = window.devicePixelRatio || 1;
+
+  // Display canvas — fixed to viewport, always covers the full screen
+  var canvas = document.getElementById('paint-canvas');
+  var ctx = canvas.getContext('2d');
+  document.body.appendChild(canvas);
+
+  // Offscreen canvas — full document size, permanently stores all painting
+  var off = document.createElement('canvas');
+  var offCtx = off.getContext('2d');
+
+  function sizeDisplay() {
+    var w = window.innerWidth, h = window.innerHeight;
+    canvas.width  = w * dpr;
+    canvas.height = h * dpr;
+    canvas.style.width  = w + 'px';
+    canvas.style.height = h + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    blit();
+  }
+
+  function sizeOffscreen() {
+    var w = Math.max(document.body.scrollWidth,  document.documentElement.scrollWidth);
+    var h = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+    if (off.width === w && off.height === h) return;
+    // preserve existing painting
+    var tmp = document.createElement('canvas');
+    tmp.width = off.width; tmp.height = off.height;
+    tmp.getContext('2d').drawImage(off, 0, 0);
+    off.width = w; off.height = h;
+    offCtx.drawImage(tmp, 0, 0);
+  }
+
+  function blit() {
+    var sx = window.scrollX, sy = window.scrollY;
+    var w = window.innerWidth,  h = window.innerHeight;
+    ctx.clearRect(0, 0, w, h);
+    if (off.width > 0 && off.height > 0) {
+      ctx.drawImage(off, sx, sy, w, h, 0, 0, w, h);
+    }
+  }
+
+  sizeDisplay();
+  sizeOffscreen();
+  // re-measure after full page load so the footer is included
+  window.addEventListener('load', function () { sizeOffscreen(); blit(); });
+  window.addEventListener('resize', function () { sizeDisplay(); sizeOffscreen(); });
+  window.addEventListener('scroll', blit, { passive: true });
+
+  // warm green palette — light to dark, cycles as you drag
+  var palette = [
+    [160, 210, 140],  // warm sage
+    [180, 220, 110],  // yellow-green
+    [100, 160,  80],  // deep forest
+    [195, 225, 120],  // warm lime
+    [ 85, 145,  70],  // dark olive
+    [170, 215, 100],  // olive pastel
+    [155, 205, 130],  // mid green
+    [ 70, 130,  60],  // rich hunter green
+    [185, 218, 115],  // light chartreuse
+    [110, 170,  90],  // medium fern
+    [175, 212, 125],  // warm fern
+    [165, 208, 145],  // soft moss
+  ];
+  var colorIndex = 0;
+  var colorProgress = 0;
+  var colorStepDist = 600;
+  var lastX = null, lastY = null;
+
+  function lerpColor(a, b, t) {
+    return [
+      Math.round(a[0] + (b[0] - a[0]) * t),
+      Math.round(a[1] + (b[1] - a[1]) * t),
+      Math.round(a[2] + (b[2] - a[2]) * t),
+    ];
+  }
+
+  function paint(x, y) {
+    // grow offscreen if the page has expanded since last measurement
+    if (x + 140 > off.width || y + 140 > off.height) sizeOffscreen();
+
+    if (lastX !== null) {
+      var dx = x - lastX, dy = y - lastY;
+      var dist = Math.sqrt(dx * dx + dy * dy);
+      colorProgress += dist;
+      if (colorProgress >= colorStepDist) {
+        var steps = Math.floor(colorProgress / colorStepDist);
+        colorIndex = (colorIndex + steps) % palette.length;
+        colorProgress = colorProgress % colorStepDist;
+      }
+    }
+    lastX = x; lastY = y;
+
+    var t = colorProgress / colorStepDist;
+    var nextIndex = (colorIndex + 1) % palette.length;
+    var c = lerpColor(palette[colorIndex], palette[nextIndex], t);
+
+    var r = 140;
+    var g = offCtx.createRadialGradient(x, y, 0, x, y, r);
+    var rgb = c[0] + ',' + c[1] + ',' + c[2];
+    g.addColorStop(0,    'rgba(' + rgb + ', 0.24)');
+    g.addColorStop(0.15, 'rgba(' + rgb + ', 0.18)');
+    g.addColorStop(0.35, 'rgba(' + rgb + ', 0.10)');
+    g.addColorStop(0.6,  'rgba(' + rgb + ', 0.04)');
+    g.addColorStop(0.85, 'rgba(' + rgb + ', 0.01)');
+    g.addColorStop(1,    'rgba(' + rgb + ', 0)');
+    offCtx.fillStyle = g;
+    offCtx.beginPath();
+    offCtx.arc(x, y, r, 0, Math.PI * 2);
+    offCtx.fill();
+    blit();
+  }
+
+  document.addEventListener('mousemove', function (e) {
+    paint(e.pageX, e.pageY);
+  });
+
+  document.addEventListener('touchmove', function (e) {
+    var t = e.touches[0];
+    paint(t.pageX, t.pageY);
+  }, { passive: true });
+})();
+</script>
