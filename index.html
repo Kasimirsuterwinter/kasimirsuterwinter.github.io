@@ -170,9 +170,7 @@ navigation_weight: 1
     g.addColorStop(0.85, 'rgba(' + rgb + ', 0.01)');
     g.addColorStop(1,    'rgba(' + rgb + ', 0)');
     offCtx.fillStyle = g;
-    offCtx.beginPath();
-    offCtx.arc(x, y, r, 0, Math.PI * 2);
-    offCtx.fill();
+    offCtx.fillRect(x - r, y - r, r * 2, r * 2);
     blit();
   }
 
