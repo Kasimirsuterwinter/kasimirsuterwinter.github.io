@@ -130,7 +130,8 @@ navigation_weight: 1
   var colorIndex = 0;
   var colorProgress = 0;
   var colorStepDist = 600;
-  var lastX = null, lastY = null;
+  var stampX = null, stampY = null;
+  var brushSpacing = 10; // pixels between gradient stamps
 
   function lerpColor(a, b, t) {
     return [
@@ -140,26 +141,10 @@ navigation_weight: 1
     ];
   }
 
-  function paint(x, y) {
-    // grow offscreen if the page has expanded since last measurement
-    if (x + 140 > off.width || y + 140 > off.height) sizeOffscreen();
-
-    if (lastX !== null) {
-      var dx = x - lastX, dy = y - lastY;
-      var dist = Math.sqrt(dx * dx + dy * dy);
-      colorProgress += dist;
-      if (colorProgress >= colorStepDist) {
-        var steps = Math.floor(colorProgress / colorStepDist);
-        colorIndex = (colorIndex + steps) % palette.length;
-        colorProgress = colorProgress % colorStepDist;
-      }
-    }
-    lastX = x; lastY = y;
-
+  function drawStamp(x, y) {
     var t = colorProgress / colorStepDist;
     var nextIndex = (colorIndex + 1) % palette.length;
     var c = lerpColor(palette[colorIndex], palette[nextIndex], t);
-
     var r = 140;
     var g = offCtx.createRadialGradient(x, y, 0, x, y, r);
     var rgb = c[0] + ',' + c[1] + ',' + c[2];
@@ -171,6 +156,36 @@ navigation_weight: 1
     g.addColorStop(1,    'rgba(' + rgb + ', 0)');
     offCtx.fillStyle = g;
     offCtx.fillRect(x - r, y - r, r * 2, r * 2);
+  }
+
+  function paint(x, y) {
+    // grow offscreen if the page has expanded since last measurement
+    if (x + 140 > off.width || y + 140 > off.height) sizeOffscreen();
+
+    if (stampX === null) {
+      stampX = x; stampY = y;
+      drawStamp(x, y);
+      blit();
+      return;
+    }
+
+    var dx = x - stampX, dy = y - stampY;
+    var dist = Math.sqrt(dx * dx + dy * dy);
+    if (dist < brushSpacing) return;
+
+    // Walk along the path, placing stamps at fixed intervals
+    var nx = dx / dist, ny = dy / dist;
+    var steps = Math.floor(dist / brushSpacing);
+    for (var i = 0; i < steps; i++) {
+      stampX += nx * brushSpacing;
+      stampY += ny * brushSpacing;
+      colorProgress += brushSpacing;
+      if (colorProgress >= colorStepDist) {
+        colorIndex = (colorIndex + Math.floor(colorProgress / colorStepDist)) % palette.length;
+        colorProgress = colorProgress % colorStepDist;
+      }
+      drawStamp(stampX, stampY);
+    }
     blit();
   }
 
