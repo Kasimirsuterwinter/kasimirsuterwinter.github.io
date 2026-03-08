@@ -63,14 +63,12 @@ navigation_weight: 1
 
 <script>
 (function () {
+  // ── Persistent canvas layer ──────────────────────────────────────────────
   var dpr = window.devicePixelRatio || 1;
 
-  // Display canvas — fixed to viewport, always covers the full screen
   var canvas = document.getElementById('paint-canvas');
   var ctx = canvas.getContext('2d');
-  document.body.appendChild(canvas);
 
-  // Offscreen canvas — full document size, permanently stores all painting
   var off = document.createElement('canvas');
   var offCtx = off.getContext('2d');
 
@@ -85,16 +83,13 @@ navigation_weight: 1
   }
 
   function sizeOffscreen() {
-    // Store at physical pixel resolution to avoid Retina upscale pixelation
     var w = Math.max(document.body.scrollWidth,  document.documentElement.scrollWidth)  * dpr;
     var h = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight) * dpr;
     if (off.width === w && off.height === h) return;
-    // preserve existing painting
     var tmp = document.createElement('canvas');
     tmp.width = off.width; tmp.height = off.height;
     tmp.getContext('2d').drawImage(off, 0, 0);
     off.width = w; off.height = h;
-    // offCtx coordinate system mirrors display ctx: CSS pixels (setTransform scales to physical)
     offCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
     if (tmp.width > 0 && tmp.height > 0) {
       offCtx.drawImage(tmp, 0, 0, tmp.width / dpr, tmp.height / dpr);
@@ -103,41 +98,34 @@ navigation_weight: 1
 
   function blit() {
     var sx = window.scrollX, sy = window.scrollY;
-    var w = window.innerWidth,  h = window.innerHeight;
+    var w = window.innerWidth, h = window.innerHeight;
     ctx.clearRect(0, 0, w, h);
     if (off.width > 0 && off.height > 0) {
-      // Source in physical pixels, dest in CSS pixels (ctx has DPR transform) → 1:1 physical mapping
       ctx.drawImage(off, sx * dpr, sy * dpr, w * dpr, h * dpr, 0, 0, w, h);
     }
   }
 
   sizeDisplay();
   sizeOffscreen();
-  // re-measure after full page load so the footer is included
-  window.addEventListener('load', function () { sizeOffscreen(); blit(); });
+  window.addEventListener('load',   function () { sizeOffscreen(); blit(); });
   window.addEventListener('resize', function () { sizeDisplay(); sizeOffscreen(); });
   window.addEventListener('scroll', blit, { passive: true });
 
-  // warm green palette — light to dark, cycles as you drag
+  // ── Palette ──────────────────────────────────────────────────────────────
   var palette = [
-    [160, 210, 140],  // warm sage
-    [180, 220, 110],  // yellow-green
-    [100, 160,  80],  // deep forest
-    [195, 225, 120],  // warm lime
-    [ 85, 145,  70],  // dark olive
-    [170, 215, 100],  // olive pastel
-    [155, 205, 130],  // mid green
-    [ 70, 130,  60],  // rich hunter green
-    [185, 218, 115],  // light chartreuse
-    [110, 170,  90],  // medium fern
-    [175, 212, 125],  // warm fern
-    [165, 208, 145],  // soft moss
+    [160, 210, 140],
+    [180, 220, 110],
+    [100, 160,  80],
+    [195, 225, 120],
+    [ 85, 145,  70],
+    [170, 215, 100],
+    [155, 205, 130],
+    [ 70, 130,  60],
+    [185, 218, 115],
+    [110, 170,  90],
+    [175, 212, 125],
+    [165, 208, 145],
   ];
-  var colorIndex = 0;
-  var colorProgress = 0;
-  var colorStepDist = 600;
-  var stampX = null, stampY = null;
-  var brushSpacing = 15; // higher alpha per stamp avoids 8-bit quantization grid
 
   function lerpColor(a, b, t) {
     return [
@@ -147,65 +135,117 @@ navigation_weight: 1
     ];
   }
 
-  // Radial gradient with a Gaussian-like falloff profile.
-  // Many low-alpha stamps overlap to build solid coverage at the centre
-  // while the gradient tapers smoothly to 0 at the edge — no ring artifacts.
-  // Stamp size is fixed (no speed dependency) so the brush is always consistent.
-  function drawStamp(x, y) {
-    var t = colorProgress / colorStepDist;
-    var nextIndex = (colorIndex + 1) % palette.length;
-    var c = lerpColor(palette[colorIndex], palette[nextIndex], t);
-    var rgb = c[0] + ',' + c[1] + ',' + c[2];
-
-    var r = 240; // fixed radius — ~32 stamps overlap at centre → near-solid
+  // Bake a trail point permanently onto the offscreen canvas.
+  // Called when a point reaches the fade boundary — still at full opacity —
+  // so the canvas mark matches what the box-shadow was showing at that moment.
+  // x, y are in page coordinates.
+  function bakeStamp(x, y, rgb) {
+    if (x + 70 > off.width / dpr || y + 70 > off.height / dpr) sizeOffscreen();
+    var r = 60;
     var g = offCtx.createRadialGradient(x, y, 0, x, y, r);
-    g.addColorStop(0,    'rgba(' + rgb + ', 0.10)');
-    g.addColorStop(0.35, 'rgba(' + rgb + ', 0.07)');
-    g.addColorStop(0.60, 'rgba(' + rgb + ', 0.03)');
-    g.addColorStop(0.82, 'rgba(' + rgb + ', 0.01)');
-    g.addColorStop(1,    'rgba(' + rgb + ', 0)');
+    g.addColorStop(0,    'rgba(' + rgb + ',0.18)');
+    g.addColorStop(0.35, 'rgba(' + rgb + ',0.10)');
+    g.addColorStop(0.65, 'rgba(' + rgb + ',0.04)');
+    g.addColorStop(1,    'rgba(' + rgb + ',0)');
     offCtx.fillStyle = g;
     offCtx.fillRect(x - r, y - r, r * 2, r * 2);
   }
 
-  function paint(x, y) {
-    // grow offscreen if page has expanded
-    if (x + 245 > off.width / dpr || y + 245 > off.height / dpr) sizeOffscreen();
+  // ── Box-shadow cursor trail ───────────────────────────────────────────────
+  var settings = {
+    trailLength:   250,  // short enough to stay performant
+    diameter:       17,
+    fadeStart:     0.8,
+    colorStepDist: 600,
+  };
 
-    if (stampX === null) {
-      stampX = x; stampY = y;
-      drawStamp(x, y);
-      blit();
-      return;
-    }
+  var cursor = document.createElement('div');
+  cursor.style.cssText = [
+    'position:fixed',
+    'pointer-events:none',
+    'z-index:9999',
+    'width:'  + settings.diameter + 'px',
+    'height:' + settings.diameter + 'px',
+    'border-radius:50%',
+    'transform:translate(-50%,-50%)',
+    'top:-500px',
+    'left:-500px',
+  ].join(';');
+  document.body.appendChild(cursor);
 
-    var dx = x - stampX, dy = y - stampY;
-    var dist = Math.sqrt(dx * dx + dy * dy);
-    if (dist < brushSpacing) return;
-
-    // Walk along the path placing stamps at fixed intervals
-    var nx = dx / dist, ny = dy / dist;
-    var steps = Math.floor(dist / brushSpacing);
-    for (var i = 0; i < steps; i++) {
-      stampX += nx * brushSpacing;
-      stampY += ny * brushSpacing;
-      colorProgress += brushSpacing;
-      if (colorProgress >= colorStepDist) {
-        colorIndex = (colorIndex + Math.floor(colorProgress / colorStepDist)) % palette.length;
-        colorProgress = colorProgress % colorStepDist;
-      }
-      drawStamp(stampX, stampY);
-    }
-    blit();
-  }
+  var trail      = [];
+  var cursorPos  = { x: -500, y: -500, speed: 0 };
+  var lastPos    = { x: -500, y: -500 };
+  var colorIndex    = 0;
+  var colorProgress = 0;
 
   document.addEventListener('mousemove', function (e) {
-    paint(e.pageX, e.pageY);
+    var dx = e.clientX - cursorPos.x, dy = e.clientY - cursorPos.y;
+    cursorPos = { x: e.clientX, y: e.clientY, speed: Math.sqrt(dx * dx + dy * dy) };
   });
 
   document.addEventListener('touchmove', function (e) {
     var t = e.touches[0];
-    paint(t.pageX, t.pageY);
+    var dx = t.clientX - cursorPos.x, dy = t.clientY - cursorPos.y;
+    cursorPos = { x: t.clientX, y: t.clientY, speed: Math.sqrt(dx * dx + dy * dy) };
   }, { passive: true });
+
+  function frame() {
+    // Advance palette based on distance moved this frame
+    var dx   = cursorPos.x - lastPos.x, dy = cursorPos.y - lastPos.y;
+    var dist = Math.sqrt(dx * dx + dy * dy);
+    if (dist > 0) {
+      colorProgress += dist;
+      if (colorProgress >= settings.colorStepDist) {
+        colorIndex    = (colorIndex + Math.floor(colorProgress / settings.colorStepDist)) % palette.length;
+        colorProgress = colorProgress % settings.colorStepDist;
+      }
+    }
+    lastPos = { x: cursorPos.x, y: cursorPos.y };
+
+    var t   = colorProgress / settings.colorStepDist;
+    var c   = lerpColor(palette[colorIndex], palette[(colorIndex + 1) % palette.length], t);
+    var rgb = c[0] + ',' + c[1] + ',' + c[2];
+
+    trail.push({ x: cursorPos.x, y: cursorPos.y, rgb: rgb, speed: cursorPos.speed, baked: false });
+
+    if (trail.length > settings.trailLength) {
+      // Bake the entry sitting exactly at the fade boundary — it's still at
+      // alpha=1 here, so the canvas mark matches the live box-shadow colour.
+      var bakeIdx = Math.floor(trail.length * (1 - settings.fadeStart));
+      if (bakeIdx < trail.length && !trail[bakeIdx].baked) {
+        trail[bakeIdx].baked = true;
+        var p = trail[bakeIdx];
+        bakeStamp(p.x + window.scrollX, p.y + window.scrollY, p.rgb);
+      }
+      trail.shift();
+    }
+
+    // Move and colour the cursor dot
+    cursor.style.top             = cursorPos.y + 'px';
+    cursor.style.left            = cursorPos.x + 'px';
+    cursor.style.backgroundColor = 'rgb(' + rgb + ')';
+
+    // Build box-shadow string (oldest → newest so newest layer is on top)
+    var shadows = [];
+    for (var i = 0; i < trail.length; i++) {
+      var pos     = trail[i];
+      var offsetX = pos.x - cursorPos.x;
+      var offsetY = pos.y - cursorPos.y;
+      var age     = (trail.length - i) / trail.length; // 1=oldest, ~0=newest
+      var fadeOut = age < settings.fadeStart
+        ? 0
+        : Math.pow(4 * (age - settings.fadeStart), 2);
+      var alpha = 1 - fadeOut;
+      var blur  = pos.speed + 1;
+      shadows.push(offsetX + 'px ' + offsetY + 'px ' + blur + 'px ' + settings.diameter + 'px rgba(' + pos.rgb + ',' + alpha + ')');
+    }
+    cursor.style.boxShadow = shadows.reverse().join(',');
+
+    blit(); // sync offscreen canvas to viewport every frame
+    requestAnimationFrame(frame);
+  }
+
+  requestAnimationFrame(frame);
 })();
 </script>
